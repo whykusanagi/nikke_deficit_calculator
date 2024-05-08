@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CP Deficit Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evSXbVzTVFTJwvtQveJjxEgQoswYE2XAOCuA8THIIQSxBQzVjXnNCgQUN2sF8HoA" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">  </head>
+<body>
+  <div class="container mt-3">  <h1>CP Deficit Calculator</h1>  <div class="row">  <div class="col-md-6">  <div class="form-group">
+          <label for="stage_cp">Stage CP</label>
+          <input type="number" class="form-control" id="stage_cp" placeholder="Enter Stage CP">
+        </div>
+        <div class="form-group">
+          <label for="team_cp">Team CP</label>
+          <input type="number" class="form-control" id="team_cp" placeholder="Enter Team CP">
+        </div>
+      </div>
+      <div class="col-md-6">  <div class="cp_defict">CP Deficit: <span id="cp_deficit_value">0</span></div>
+        <div class="stat_penalty">Stat Penalty: <span id="stat_penalty_value">0</span></div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-OgwbZS7/BXzYhOCvAUJyLMzIolLxQVaU1T9sHijO1RQnlcmzJBvbqS DIEGOOCjfszGT" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
