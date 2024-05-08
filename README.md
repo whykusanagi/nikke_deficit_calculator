@@ -18,7 +18,8 @@ This is a web-based calculator designed to help players of Nikke: Goddess of Vic
 **Data Source and References:**
 
 - **Nikke.gg**: [https://nikke.gg/](https://nikke.gg/) (general Nikke information)
-- **Nikke Google Sheet**: [https://www.reddit.com/r/NikkeMobile/comments/yur3la/nikke_resource_sheets/](https://www.reddit.com/r/NikkeMobile/comments/yur3la/nikke_resource_sheets/) (source of power law formula data)
+- **Nikke Reddit**: [https://www.reddit.com/r/NikkeMobile/comments/yur3la/nikke_resource_sheets/](https://www.reddit.com/r/NikkeMobile/comments/yur3la/nikke_resource_sheets/)
+- **Nikke Google Sheet**: [https://docs.google.com/spreadsheets/d/1PaPU07AAZvECsSQeOhzMxue3q-sYXiKWclT3geaDJAM/edit#gid=1167646947] (source of power law training data)
 ![Nikke Deficit Calculator](stat_penalty.png)
 
 
