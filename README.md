@@ -2,8 +2,6 @@
 
 This is a web-based calculator designed to help players of Nikke: Goddess of Victory determine the CP (Combat Power) deficit between their Stage CP (recommended CP for a stage) and Team CP (their actual team's CP). The CP deficit is a crucial factor in Nikke, as it can significantly impact battle outcomes.
 
-![Nikke Deficit Calculator](stat_penalty.png) ![Nikke Deficit Calculator](example_screen.png)
-
 **Features:**
 
 - **Simple Interface:** Enter your Stage CP and Team CP values, and the calculator instantly displays the CP deficit percentage.
@@ -21,6 +19,24 @@ This is a web-based calculator designed to help players of Nikke: Goddess of Vic
 
 - **Nikke.gg**: [https://nikke.gg/](https://nikke.gg/) (general Nikke information)
 - **Nikke Google Sheet**: [https://www.reddit.com/r/NikkeMobile/comments/yur3la/nikke_resource_sheets/](https://www.reddit.com/r/NikkeMobile/comments/yur3la/nikke_resource_sheets/) (source of power law formula data)
+![Nikke Deficit Calculator](stat_penalty.png)
+
+
+**Explanation of Stat Penalty Calculation:**
+
+The CP deficit calculator utilizes a data-driven approach to determine the stat penalty based on the calculated CP deficit.
+
+A separate Python script (not included in this repository) is responsible for learning the optimal formula to represent the relationship between CP deficit and stat penalty. This script (e.g., `learn_stat_penalty_formula.py`) analyzes a dataset containing CP deficit and corresponding stat penalty values. It then attempts to fit different mathematical functions (linear, exponential, power law) to the data and selects the one that best minimizes the error between the predicted and actual stat penalty values.
+
+**Benefits:**
+
+This data-driven approach ensures the stat penalty calculation is grounded in actual game data rather than relying on arbitrary assumptions. It allows for future adjustments if the underlying relationship between CP deficit and stat penalty changes in future game updates.
+
+**Additional Notes:**
+
+The specific formula used for the stat penalty calculation is not explicitly shown here, but it's determined by the `learn_stat_penalty_formula.py` script based on the analyzed data. You can consider mentioning the source of the data used for the formula if it comes from a reputable community resource.
+
+  ![Nikke Deficit Calculator](example_screen.png)
 
 **Disclaimer:**
 
