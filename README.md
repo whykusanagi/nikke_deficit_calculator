@@ -2,7 +2,7 @@
 
 This is a web-based calculator designed to help players of Nikke: Goddess of Victory determine the CP (Combat Power) deficit between their Stage CP (recommended CP for a stage) and Team CP (their actual team's CP). The CP deficit is a crucial factor in Nikke, as it can significantly impact battle outcomes.
 
-![Nikke Deficit Calculator](example_screen.png)
+![Nikke Deficit Calculator](stat_penalty.png) ![Nikke Deficit Calculator](example_screen.png)
 
 **Features:**
 
