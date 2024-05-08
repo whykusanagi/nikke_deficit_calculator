@@ -35,7 +35,7 @@ This data-driven approach ensures the stat penalty calculation is grounded in ac
 
 **Additional Notes:**
 
-The specific formula used for the stat penalty calculation is not explicitly shown here, but it's determined by the `learn_stat_penalty_formula.py` script based on the analyzed data. You can consider mentioning the source of the data used for the formula if it comes from a reputable community resource.
+The specific formula used for the stat penalty calculation is not explicitly shown here, but it's determined by the `learn_stat_penalty_formula.py` script based on the analyzed data. 
 
   ![Nikke Deficit Calculator](example_screen.png)
 
