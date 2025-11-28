@@ -1,0 +1,10 @@
+{
+  "low_range_threshold": 0.01,
+  "high_range_threshold": 0.48,
+  "main_range": {
+    "a": 1.0399570265430915,
+    "b": 0.478827201593444,
+    "r_squared": 0.9950617986725395
+  },
+  "use_lookup_table": true
+}

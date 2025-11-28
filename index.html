@@ -1,27 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CP Deficit Calculator</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evSXbVzTVFTJwvtQveJjxEgQoswYE2XAOCuA8THIIQSxBQzVjXnNCgQUN2sF8HoA" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">  </head>
-<body>
-  <div class="container mt-3">  <h1>CP Deficit Calculator</h1>  <div class="row">  <div class="col-md-6">  <div class="form-group">
-          <label for="stage_cp">Stage CP</label>
-          <input type="number" class="form-control" id="stage_cp" placeholder="Enter Stage CP">
-        </div>
-        <div class="form-group">
-          <label for="team_cp">Team CP</label>
-          <input type="number" class="form-control" id="team_cp" placeholder="Enter Team CP">
-        </div>
-      </div>
-      <div class="col-md-6">  <div class="cp_defict">CP Deficit: <span id="cp_deficit_value">0</span></div>
-        <div class="stat_penalty">Stat Penalty: <span id="stat_penalty_value">0</span></div>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NIKKE CP Deficit Calculator | nikkers.gg</title>
+  <meta name="description" content="Calculate Combat Power deficit and stat penalties for your NIKKE team. Accurate calculations using piecewise function with 501 data points." />
+  
+  <!-- Load environment config for asset URL handling (dev vs production) -->
+  <!-- Note: Adjust paths based on deployment location (../ for subdirectory, ./ for root) -->
+  <script src="../../assets/js/env-config.js"></script>
+  <!-- Background image setup (uses env-config for URL conversion) -->
+  <script src="../../assets/js/background-setup.js"></script>
+  
+  <!-- Corrupted Theme Framework -->
+  <link rel="stylesheet" href="../../assets/css/corrupted-theme/theme.css">
+  
+  <!-- Site-Specific Overrides (optional - calculator works standalone) -->
+  <!-- <link rel="stylesheet" href="../../assets/css/site-overrides.css"> -->
+  
+  <!-- Calculator-specific styles -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "NIKKE CP Deficit Calculator",
+    "description": "Calculate Combat Power deficit and stat penalties for Goddess of Victory: NIKKE",
+    "url": "https://nikkers.gg/tools/cp-deficit-calculator",
+    "applicationCategory": "GameApplication",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "nikkers.gg"
+    }
+  }
+  </script>
+</head>
+<body class="has-video-bg calculator-page">
+  <script src="../assets/js/loading.js"></script>
+
+  <!-- Video background (package structure) -->
+  <video id="bg-video" class="background-media" autoplay muted loop playsinline preload="metadata" poster="https://s3.whykusanagi.xyz/celeste-bg-poster.jpg">
+    <source src="https://s3.whykusanagi.xyz/celeste-bg.webm" type="video/webm">
+    <source src="https://s3.whykusanagi.xyz/celeste-bg.mp4" type="video/mp4">
+  </video>
+  <div class="glass-backdrop"></div>
+
+  <nav class="navbar">
+    <div class="navbar-content">
+      <a href="../../index.html" class="navbar-logo"><i class="fas fa-home"></i> nikkers.gg</a>
+      <div class="navbar-links">
+        <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="../../tools.html"><i class="fas fa-tools"></i> Tools</a>
+        <a href="https://github.com/whykusanagi/nikke_deficit_calculator" target="_blank" rel="noopener"><i class="fab fa-github"></i> GitHub</a>
       </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-OgwbZS7/BXzYhOCvAUJyLMzIolLxQVaU1T9sHijO1RQnlcmzJBvbqS DIEGOOCjfszGT" crossorigin="anonymous"></script>
+  </nav>
+
+  <main class="app-shell">
+    <div class="calculator-container">
+      <header class="calculator-header">
+        <h1 class="corrupted-text">NIKKE CP Deficit Calculator</h1>
+        <p class="lead">Calculate Combat Power deficit and stat penalties for your team</p>
+      </header>
+
+      <div class="calculator-grid">
+        <!-- Input Section -->
+        <section class="card calculator-input">
+          <header class="card-header">
+            <h2><i class="fas fa-calculator"></i> Input</h2>
+          </header>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="stage_cp" class="form-label">
+                <i class="fas fa-flag"></i> Stage CP (Recommended)
+              </label>
+              <input 
+                type="number" 
+                class="form-control" 
+                id="stage_cp" 
+                placeholder="Enter Stage CP"
+                min="1"
+                step="1"
+                aria-describedby="stage_cp_help"
+                required
+              >
+              <small id="stage_cp_help" class="form-text">The recommended CP for the stage</small>
+            </div>
+            
+            <div class="form-group">
+              <label for="team_cp" class="form-label">
+                <i class="fas fa-users"></i> Team CP (Actual)
+              </label>
+              <input 
+                type="number" 
+                class="form-control" 
+                id="team_cp" 
+                placeholder="Enter Team CP"
+                min="1"
+                step="1"
+                aria-describedby="team_cp_help"
+                required
+              >
+              <small id="team_cp_help" class="form-text">Your actual team's total CP</small>
+            </div>
+            
+            <div id="error" class="alert alert-error" role="alert" style="display: none;"></div>
+          </div>
+        </section>
+
+        <!-- Results Section -->
+        <section class="card calculator-results">
+          <header class="card-header">
+            <h2><i class="fas fa-chart-line"></i> Results</h2>
+          </header>
+          <div class="card-body">
+            <div class="result-item">
+              <label class="result-label">
+                <i class="fas fa-percentage"></i> CP Deficit
+              </label>
+              <div class="result-value" id="cp_deficit_value">0.00%</div>
+              <small class="result-help">Percentage difference between Stage CP and Team CP</small>
+            </div>
+            
+            <div class="result-item">
+              <label class="result-label">
+                <i class="fas fa-exclamation-triangle"></i> Stat Penalty
+              </label>
+              <div class="result-value stat-penalty-display" id="stat_penalty_value" data-color="success">0.00%</div>
+              <small class="result-help">Calculated stat penalty using piecewise function</small>
+            </div>
+            
+            <div class="color-legend">
+              <h3>Deficit Levels</h3>
+              <div class="legend-items">
+                <div class="legend-item">
+                  <span class="legend-color success"></span>
+                  <span>Low deficit (&lt;25%)</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color caution"></span>
+                  <span>Minor deficit (25-29%)</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color warning"></span>
+                  <span>Moderate deficit (30-34%)</span>
+                </div>
+                <div class="legend-item">
+                  <span class="legend-color danger"></span>
+                  <span>High deficit (≥35%)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Information Section -->
+      <section class="card calculator-info">
+        <header class="card-header">
+          <h2><i class="fas fa-info-circle"></i> About the Formula</h2>
+        </header>
+        <div class="card-body">
+          <p>The stat penalty uses a <strong>piecewise function</strong> derived from the included dataset:</p>
+          
+          <div class="formula-display">
+            <code>Stat Penalty = piecewise(deficit)</code>
+          </div>
+          
+          <ul class="formula-details">
+            <li><strong>Low range (&lt; 1%)</strong>: Lookup table for accuracy</li>
+            <li><strong>Main range (1% - 48%)</strong>: Power law formula <code>a × deficit^b</code>
+              <ul>
+                <li><code>a = 1.039957</code></li>
+                <li><code>b = 0.478827</code></li>
+                <li><strong>R² = 0.995062</strong> (excellent fit)</li>
+              </ul>
+            </li>
+            <li><strong>High range (&gt; 48%)</strong>: Lookup table for accuracy</li>
+          </ul>
+          
+          <p class="data-source">
+            <i class="fas fa-database"></i> <strong>Dataset:</strong> 
+            Included in repository (self-contained)
+            <br>
+            <small>501 data points covering 0.00% to 49.91% CP deficit</small>
+          </p>
+          
+          <div class="alert alert-info">
+            <i class="fas fa-lightbulb"></i> <strong>Tip:</strong> The penalty is active in Campaign (normal and hard), Tribe Towers, and Lost Sector. 
+            It is <strong>not</strong> applied in EX Battles, Simulation Room, Interception, or Coop.
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2025 nikkers.gg. All rights reserved.</p>
+      <p>
+        <a href="https://github.com/whykusanagi/nikke_deficit_calculator" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/video-background.js"></script>
+  <script src="calculator.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

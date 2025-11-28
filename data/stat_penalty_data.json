@@ -1,0 +1,566 @@
+[
+  {
+    "cp_def": 0.0,
+    "stat_penalty": 0.0,
+    "cp_deficit_percent": 0.0,
+    "stat_penalty_percent": 0.0
+  },
+  {
+    "cp_def": 0.0001,
+    "stat_penalty": 0.05,
+    "cp_deficit_percent": 0.01,
+    "stat_penalty_percent": 5.0
+  },
+  {
+    "cp_def": 0.0011,
+    "stat_penalty": 0.055099999999999996,
+    "cp_deficit_percent": 0.11,
+    "stat_penalty_percent": 5.51
+  },
+  {
+    "cp_def": 0.0021,
+    "stat_penalty": 0.0601,
+    "cp_deficit_percent": 0.21,
+    "stat_penalty_percent": 6.01
+  },
+  {
+    "cp_def": 0.0031,
+    "stat_penalty": 0.06509999999999999,
+    "cp_deficit_percent": 0.31,
+    "stat_penalty_percent": 6.51
+  },
+  {
+    "cp_def": 0.0040999999999999995,
+    "stat_penalty": 0.0701,
+    "cp_deficit_percent": 0.41,
+    "stat_penalty_percent": 7.01
+  },
+  {
+    "cp_def": 0.0051,
+    "stat_penalty": 0.075,
+    "cp_deficit_percent": 0.51,
+    "stat_penalty_percent": 7.5
+  },
+  {
+    "cp_def": 0.0060999999999999995,
+    "stat_penalty": 0.0799,
+    "cp_deficit_percent": 0.61,
+    "stat_penalty_percent": 7.99
+  },
+  {
+    "cp_def": 0.0070999999999999995,
+    "stat_penalty": 0.0848,
+    "cp_deficit_percent": 0.71,
+    "stat_penalty_percent": 8.48
+  },
+  {
+    "cp_def": 0.008100000000000001,
+    "stat_penalty": 0.0895,
+    "cp_deficit_percent": 0.81,
+    "stat_penalty_percent": 8.95
+  },
+  {
+    "cp_def": 0.0091,
+    "stat_penalty": 0.0943,
+    "cp_deficit_percent": 0.91,
+    "stat_penalty_percent": 9.43
+  },
+  {
+    "cp_def": 0.0101,
+    "stat_penalty": 0.099,
+    "cp_deficit_percent": 1.01,
+    "stat_penalty_percent": 9.9
+  },
+  {
+    "cp_def": 0.0111,
+    "stat_penalty": 0.10369999999999999,
+    "cp_deficit_percent": 1.11,
+    "stat_penalty_percent": 10.37
+  },
+  {
+    "cp_def": 0.0121,
+    "stat_penalty": 0.10830000000000001,
+    "cp_deficit_percent": 1.21,
+    "stat_penalty_percent": 10.83
+  },
+  {
+    "cp_def": 0.0131,
+    "stat_penalty": 0.11289999999999999,
+    "cp_deficit_percent": 1.31,
+    "stat_penalty_percent": 11.29
+  },
+  {
+    "cp_def": 0.0141,
+    "stat_penalty": 0.1174,
+    "cp_deficit_percent": 1.41,
+    "stat_penalty_percent": 11.74
+  },
+  {
+    "cp_def": 0.0151,
+    "stat_penalty": 0.1219,
+    "cp_deficit_percent": 1.51,
+    "stat_penalty_percent": 12.19
+  },
+  {
+    "cp_def": 0.0161,
+    "stat_penalty": 0.1264,
+    "cp_deficit_percent": 1.61,
+    "stat_penalty_percent": 12.64
+  },
+  {
+    "cp_def": 0.0171,
+    "stat_penalty": 0.1308,
+    "cp_deficit_percent": 1.71,
+    "stat_penalty_percent": 13.08
+  },
+  {
+    "cp_def": 0.0181,
+    "stat_penalty": 0.1352,
+    "cp_deficit_percent": 1.81,
+    "stat_penalty_percent": 13.52
+  },
+  {
+    "cp_def": 0.0191,
+    "stat_penalty": 0.13949999999999999,
+    "cp_deficit_percent": 1.91,
+    "stat_penalty_percent": 13.95
+  },
+  {
+    "cp_def": 0.020099999999999996,
+    "stat_penalty": 0.1438,
+    "cp_deficit_percent": 2.01,
+    "stat_penalty_percent": 14.38
+  },
+  {
+    "cp_def": 0.021099999999999997,
+    "stat_penalty": 0.1481,
+    "cp_deficit_percent": 2.11,
+    "stat_penalty_percent": 14.81
+  },
+  {
+    "cp_def": 0.022099999999999998,
+    "stat_penalty": 0.1523,
+    "cp_deficit_percent": 2.21,
+    "stat_penalty_percent": 15.23
+  },
+  {
+    "cp_def": 0.0231,
+    "stat_penalty": 0.1565,
+    "cp_deficit_percent": 2.31,
+    "stat_penalty_percent": 15.65
+  },
+  {
+    "cp_def": 0.0241,
+    "stat_penalty": 0.1606,
+    "cp_deficit_percent": 2.41,
+    "stat_penalty_percent": 16.06
+  },
+  {
+    "cp_def": 0.025099999999999997,
+    "stat_penalty": 0.16469999999999999,
+    "cp_deficit_percent": 2.51,
+    "stat_penalty_percent": 16.47
+  },
+  {
+    "cp_def": 0.026099999999999998,
+    "stat_penalty": 0.16870000000000002,
+    "cp_deficit_percent": 2.61,
+    "stat_penalty_percent": 16.87
+  },
+  {
+    "cp_def": 0.0271,
+    "stat_penalty": 0.1727,
+    "cp_deficit_percent": 2.71,
+    "stat_penalty_percent": 17.27
+  },
+  {
+    "cp_def": 0.0281,
+    "stat_penalty": 0.1766,
+    "cp_deficit_percent": 2.81,
+    "stat_penalty_percent": 17.66
+  },
+  {
+    "cp_def": 0.0291,
+    "stat_penalty": 0.18059999999999998,
+    "cp_deficit_percent": 2.91,
+    "stat_penalty_percent": 18.06
+  },
+  {
+    "cp_def": 0.0301,
+    "stat_penalty": 0.1844,
+    "cp_deficit_percent": 3.01,
+    "stat_penalty_percent": 18.44
+  },
+  {
+    "cp_def": 0.0311,
+    "stat_penalty": 0.1883,
+    "cp_deficit_percent": 3.11,
+    "stat_penalty_percent": 18.83
+  },
+  {
+    "cp_def": 0.0321,
+    "stat_penalty": 0.19210000000000002,
+    "cp_deficit_percent": 3.21,
+    "stat_penalty_percent": 19.21
+  },
+  {
+    "cp_def": 0.0331,
+    "stat_penalty": 0.19579999999999997,
+    "cp_deficit_percent": 3.31,
+    "stat_penalty_percent": 19.58
+  },
+  {
+    "cp_def": 0.0341,
+    "stat_penalty": 0.19949999999999998,
+    "cp_deficit_percent": 3.41,
+    "stat_penalty_percent": 19.95
+  },
+  {
+    "cp_def": 0.0351,
+    "stat_penalty": 0.2032,
+    "cp_deficit_percent": 3.51,
+    "stat_penalty_percent": 20.32
+  },
+  {
+    "cp_def": 0.0361,
+    "stat_penalty": 0.20679999999999998,
+    "cp_deficit_percent": 3.61,
+    "stat_penalty_percent": 20.68
+  },
+  {
+    "cp_def": 0.0371,
+    "stat_penalty": 0.2104,
+    "cp_deficit_percent": 3.71,
+    "stat_penalty_percent": 21.04
+  },
+  {
+    "cp_def": 0.0381,
+    "stat_penalty": 0.2139,
+    "cp_deficit_percent": 3.81,
+    "stat_penalty_percent": 21.39
+  },
+  {
+    "cp_def": 0.0391,
+    "stat_penalty": 0.21739999999999998,
+    "cp_deficit_percent": 3.91,
+    "stat_penalty_percent": 21.74
+  },
+  {
+    "cp_def": 0.0401,
+    "stat_penalty": 0.2208,
+    "cp_deficit_percent": 4.01,
+    "stat_penalty_percent": 22.08
+  },
+  {
+    "cp_def": 0.041100000000000005,
+    "stat_penalty": 0.2242,
+    "cp_deficit_percent": 4.11,
+    "stat_penalty_percent": 22.42
+  },
+  {
+    "cp_def": 0.0421,
+    "stat_penalty": 0.22760000000000002,
+    "cp_deficit_percent": 4.21,
+    "stat_penalty_percent": 22.76
+  },
+  {
+    "cp_def": 0.0431,
+    "stat_penalty": 0.2309,
+    "cp_deficit_percent": 4.31,
+    "stat_penalty_percent": 23.09
+  },
+  {
+    "cp_def": 0.0441,
+    "stat_penalty": 0.23420000000000002,
+    "cp_deficit_percent": 4.41,
+    "stat_penalty_percent": 23.42
+  },
+  {
+    "cp_def": 0.0451,
+    "stat_penalty": 0.2375,
+    "cp_deficit_percent": 4.51,
+    "stat_penalty_percent": 23.75
+  },
+  {
+    "cp_def": 0.0461,
+    "stat_penalty": 0.2407,
+    "cp_deficit_percent": 4.61,
+    "stat_penalty_percent": 24.07
+  },
+  {
+    "cp_def": 0.0471,
+    "stat_penalty": 0.2438,
+    "cp_deficit_percent": 4.71,
+    "stat_penalty_percent": 24.38
+  },
+  {
+    "cp_def": 0.0481,
+    "stat_penalty": 0.2469,
+    "cp_deficit_percent": 4.81,
+    "stat_penalty_percent": 24.69
+  },
+  {
+    "cp_def": 0.049100000000000005,
+    "stat_penalty": 0.25,
+    "cp_deficit_percent": 4.91,
+    "stat_penalty_percent": 25.0
+  },
+  {
+    "cp_def": 0.0501,
+    "stat_penalty": 0.253,
+    "cp_deficit_percent": 5.01,
+    "stat_penalty_percent": 25.3
+  },
+  {
+    "cp_def": 0.051100000000000007,
+    "stat_penalty": 0.256,
+    "cp_deficit_percent": 5.11,
+    "stat_penalty_percent": 25.6
+  },
+  {
+    "cp_def": 0.0521,
+    "stat_penalty": 0.259,
+    "cp_deficit_percent": 5.21,
+    "stat_penalty_percent": 25.9
+  },
+  {
+    "cp_def": 0.053099999999999994,
+    "stat_penalty": 0.2619,
+    "cp_deficit_percent": 5.31,
+    "stat_penalty_percent": 26.19
+  },
+  {
+    "cp_def": 0.0541,
+    "stat_penalty": 0.2647,
+    "cp_deficit_percent": 5.41,
+    "stat_penalty_percent": 26.47
+  },
+  {
+    "cp_def": 0.055099999999999996,
+    "stat_penalty": 0.2676,
+    "cp_deficit_percent": 5.51,
+    "stat_penalty_percent": 26.76
+  },
+  {
+    "cp_def": 0.056100000000000004,
+    "stat_penalty": 0.2703,
+    "cp_deficit_percent": 5.61,
+    "stat_penalty_percent": 27.03
+  },
+  {
+    "cp_def": 0.0571,
+    "stat_penalty": 0.2731,
+    "cp_deficit_percent": 5.71,
+    "stat_penalty_percent": 27.31
+  },
+  {
+    "cp_def": 0.0581,
+    "stat_penalty": 0.2758,
+    "cp_deficit_percent": 5.81,
+    "stat_penalty_percent": 27.58
+  },
+  {
+    "cp_def": 0.0591,
+    "stat_penalty": 0.2784,
+    "cp_deficit_percent": 5.91,
+    "stat_penalty_percent": 27.84
+  },
+  {
+    "cp_def": 0.0601,
+    "stat_penalty": 0.281,
+    "cp_deficit_percent": 6.01,
+    "stat_penalty_percent": 28.1
+  },
+  {
+    "cp_def": 0.0611,
+    "stat_penalty": 0.2836,
+    "cp_deficit_percent": 6.11,
+    "stat_penalty_percent": 28.36
+  },
+  {
+    "cp_def": 0.0621,
+    "stat_penalty": 0.2861,
+    "cp_deficit_percent": 6.21,
+    "stat_penalty_percent": 28.61
+  },
+  {
+    "cp_def": 0.06309999999999999,
+    "stat_penalty": 0.28859999999999997,
+    "cp_deficit_percent": 6.31,
+    "stat_penalty_percent": 28.86
+  },
+  {
+    "cp_def": 0.0641,
+    "stat_penalty": 0.29100000000000004,
+    "cp_deficit_percent": 6.41,
+    "stat_penalty_percent": 29.1
+  },
+  {
+    "cp_def": 0.06509999999999999,
+    "stat_penalty": 0.2934,
+    "cp_deficit_percent": 6.51,
+    "stat_penalty_percent": 29.34
+  },
+  {
+    "cp_def": 0.0661,
+    "stat_penalty": 0.2958,
+    "cp_deficit_percent": 6.61,
+    "stat_penalty_percent": 29.58
+  },
+  {
+    "cp_def": 0.06709999999999999,
+    "stat_penalty": 0.2981,
+    "cp_deficit_percent": 6.71,
+    "stat_penalty_percent": 29.81
+  },
+  {
+    "cp_def": 0.0681,
+    "stat_penalty": 0.3004,
+    "cp_deficit_percent": 6.81,
+    "stat_penalty_percent": 30.04
+  },
+  {
+    "cp_def": 0.0691,
+    "stat_penalty": 0.30260000000000004,
+    "cp_deficit_percent": 6.91,
+    "stat_penalty_percent": 30.26
+  },
+  {
+    "cp_def": 0.0701,
+    "stat_penalty": 0.3048,
+    "cp_deficit_percent": 7.01,
+    "stat_penalty_percent": 30.48
+  },
+  {
+    "cp_def": 0.0711,
+    "stat_penalty": 0.307,
+    "cp_deficit_percent": 7.11,
+    "stat_penalty_percent": 30.7
+  },
+  {
+    "cp_def": 0.0721,
+    "stat_penalty": 0.3091,
+    "cp_deficit_percent": 7.21,
+    "stat_penalty_percent": 30.91
+  },
+  {
+    "cp_def": 0.0731,
+    "stat_penalty": 0.3111,
+    "cp_deficit_percent": 7.31,
+    "stat_penalty_percent": 31.11
+  },
+  {
+    "cp_def": 0.0741,
+    "stat_penalty": 0.3131,
+    "cp_deficit_percent": 7.41,
+    "stat_penalty_percent": 31.31
+  },
+  {
+    "cp_def": 0.0751,
+    "stat_penalty": 0.3151,
+    "cp_deficit_percent": 7.51,
+    "stat_penalty_percent": 31.51
+  },
+  {
+    "cp_def": 0.0761,
+    "stat_penalty": 0.3171,
+    "cp_deficit_percent": 7.61,
+    "stat_penalty_percent": 31.71
+  },
+  {
+    "cp_def": 0.0771,
+    "stat_penalty": 0.319,
+    "cp_deficit_percent": 7.71,
+    "stat_penalty_percent": 31.9
+  },
+  {
+    "cp_def": 0.0781,
+    "stat_penalty": 0.3208,
+    "cp_deficit_percent": 7.81,
+    "stat_penalty_percent": 32.08
+  },
+  {
+    "cp_def": 0.0791,
+    "stat_penalty": 0.3226,
+    "cp_deficit_percent": 7.91,
+    "stat_penalty_percent": 32.26
+  },
+  {
+    "cp_def": 0.0801,
+    "stat_penalty": 0.32439999999999997,
+    "cp_deficit_percent": 8.01,
+    "stat_penalty_percent": 32.44
+  },
+  {
+    "cp_def": 0.08109999999999999,
+    "stat_penalty": 0.3261,
+    "cp_deficit_percent": 8.11,
+    "stat_penalty_percent": 32.61
+  },
+  {
+    "cp_def": 0.0821,
+    "stat_penalty": 0.32780000000000004,
+    "cp_deficit_percent": 8.21,
+    "stat_penalty_percent": 32.78
+  },
+  {
+    "cp_def": 0.08310000000000001,
+    "stat_penalty": 0.32939999999999997,
+    "cp_deficit_percent": 8.31,
+    "stat_penalty_percent": 32.94
+  },
+  {
+    "cp_def": 0.08410000000000001,
+    "stat_penalty": 0.331,
+    "cp_deficit_percent": 8.41,
+    "stat_penalty_percent": 33.1
+  },
+  {
+    "cp_def": 0.0851,
+    "stat_penalty": 0.3326,
+    "cp_deficit_percent": 8.51,
+    "stat_penalty_percent": 33.26
+  },
+  {
+    "cp_def": 0.0861,
+    "stat_penalty": 0.33409999999999995,
+    "cp_deficit_percent": 8.61,
+    "stat_penalty_percent": 33.41
+  },
+  {
+    "cp_def": 0.08710000000000001,
+    "stat_penalty": 0.3356,
+    "cp_deficit_percent": 8.71,
+    "stat_penalty_percent": 33.56
+  },
+  {
+    "cp_def": 0.08810000000000001,
+    "stat_penalty": 0.337,
+    "cp_deficit_percent": 8.81,
+    "stat_penalty_percent": 33.7
+  },
+  {
+    "cp_def": 0.0891,
+    "stat_penalty": 0.33840000000000003,
+    "cp_deficit_percent": 8.91,
+    "stat_penalty_percent": 33.84
+  },
+  {
+    "cp_def": 0.0901,
+    "stat_penalty": 0.3398,
+    "cp_deficit_percent": 9.01,
+    "stat_penalty_percent": 33.98
+  },
+  {
+    "cp_def": 0.0911,
+    "stat_penalty": 0.3411,
+    "cp_deficit_percent": 9.11,
+    "stat_penalty_percent": 34.11
+  },
+  {
+    "cp_def": 0.4991,
+    "stat_penalty": 0.9,
+    "cp_deficit_percent": 49.91,
+    "stat_penalty_percent": 90.0
+  }
+]

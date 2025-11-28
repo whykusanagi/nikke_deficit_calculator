@@ -1,0 +1,2006 @@
+[
+  {
+    "cp_deficit": 0.0,
+    "stat_penalty": 0.0
+  },
+  {
+    "cp_deficit": 0.0001,
+    "stat_penalty": 0.05
+  },
+  {
+    "cp_deficit": 0.0011,
+    "stat_penalty": 0.0550999999999999
+  },
+  {
+    "cp_deficit": 0.0021,
+    "stat_penalty": 0.0601
+  },
+  {
+    "cp_deficit": 0.0031,
+    "stat_penalty": 0.0650999999999999
+  },
+  {
+    "cp_deficit": 0.0040999999999999,
+    "stat_penalty": 0.0701
+  },
+  {
+    "cp_deficit": 0.0051,
+    "stat_penalty": 0.075
+  },
+  {
+    "cp_deficit": 0.0060999999999999,
+    "stat_penalty": 0.0799
+  },
+  {
+    "cp_deficit": 0.0070999999999999,
+    "stat_penalty": 0.0848
+  },
+  {
+    "cp_deficit": 0.0081,
+    "stat_penalty": 0.0895
+  },
+  {
+    "cp_deficit": 0.0091,
+    "stat_penalty": 0.0943
+  },
+  {
+    "cp_deficit": 0.0101,
+    "stat_penalty": 0.099
+  },
+  {
+    "cp_deficit": 0.0111,
+    "stat_penalty": 0.1036999999999999
+  },
+  {
+    "cp_deficit": 0.0121,
+    "stat_penalty": 0.1083
+  },
+  {
+    "cp_deficit": 0.0131,
+    "stat_penalty": 0.1128999999999999
+  },
+  {
+    "cp_deficit": 0.0141,
+    "stat_penalty": 0.1174
+  },
+  {
+    "cp_deficit": 0.0151,
+    "stat_penalty": 0.1219
+  },
+  {
+    "cp_deficit": 0.0161,
+    "stat_penalty": 0.1264
+  },
+  {
+    "cp_deficit": 0.0171,
+    "stat_penalty": 0.1308
+  },
+  {
+    "cp_deficit": 0.0181,
+    "stat_penalty": 0.1352
+  },
+  {
+    "cp_deficit": 0.0191,
+    "stat_penalty": 0.1394999999999999
+  },
+  {
+    "cp_deficit": 0.0200999999999999,
+    "stat_penalty": 0.1438
+  },
+  {
+    "cp_deficit": 0.0210999999999999,
+    "stat_penalty": 0.1481
+  },
+  {
+    "cp_deficit": 0.0220999999999999,
+    "stat_penalty": 0.1523
+  },
+  {
+    "cp_deficit": 0.0231,
+    "stat_penalty": 0.1565
+  },
+  {
+    "cp_deficit": 0.0241,
+    "stat_penalty": 0.1606
+  },
+  {
+    "cp_deficit": 0.0250999999999999,
+    "stat_penalty": 0.1646999999999999
+  },
+  {
+    "cp_deficit": 0.0260999999999999,
+    "stat_penalty": 0.1687
+  },
+  {
+    "cp_deficit": 0.0271,
+    "stat_penalty": 0.1727
+  },
+  {
+    "cp_deficit": 0.0281,
+    "stat_penalty": 0.1766
+  },
+  {
+    "cp_deficit": 0.0291,
+    "stat_penalty": 0.1805999999999999
+  },
+  {
+    "cp_deficit": 0.0301,
+    "stat_penalty": 0.1844
+  },
+  {
+    "cp_deficit": 0.0311,
+    "stat_penalty": 0.1883
+  },
+  {
+    "cp_deficit": 0.0321,
+    "stat_penalty": 0.1921
+  },
+  {
+    "cp_deficit": 0.0331,
+    "stat_penalty": 0.1957999999999999
+  },
+  {
+    "cp_deficit": 0.0341,
+    "stat_penalty": 0.1994999999999999
+  },
+  {
+    "cp_deficit": 0.0351,
+    "stat_penalty": 0.2032
+  },
+  {
+    "cp_deficit": 0.0361,
+    "stat_penalty": 0.2067999999999999
+  },
+  {
+    "cp_deficit": 0.0371,
+    "stat_penalty": 0.2104
+  },
+  {
+    "cp_deficit": 0.0381,
+    "stat_penalty": 0.2139
+  },
+  {
+    "cp_deficit": 0.0391,
+    "stat_penalty": 0.2173999999999999
+  },
+  {
+    "cp_deficit": 0.0401,
+    "stat_penalty": 0.2208
+  },
+  {
+    "cp_deficit": 0.0411,
+    "stat_penalty": 0.2242
+  },
+  {
+    "cp_deficit": 0.0421,
+    "stat_penalty": 0.2276
+  },
+  {
+    "cp_deficit": 0.0431,
+    "stat_penalty": 0.2309
+  },
+  {
+    "cp_deficit": 0.0441,
+    "stat_penalty": 0.2342
+  },
+  {
+    "cp_deficit": 0.0451,
+    "stat_penalty": 0.2375
+  },
+  {
+    "cp_deficit": 0.0461,
+    "stat_penalty": 0.2407
+  },
+  {
+    "cp_deficit": 0.0471,
+    "stat_penalty": 0.2438
+  },
+  {
+    "cp_deficit": 0.0481,
+    "stat_penalty": 0.2469
+  },
+  {
+    "cp_deficit": 0.0491,
+    "stat_penalty": 0.25
+  },
+  {
+    "cp_deficit": 0.0501,
+    "stat_penalty": 0.253
+  },
+  {
+    "cp_deficit": 0.0511,
+    "stat_penalty": 0.256
+  },
+  {
+    "cp_deficit": 0.0521,
+    "stat_penalty": 0.259
+  },
+  {
+    "cp_deficit": 0.0530999999999999,
+    "stat_penalty": 0.2619
+  },
+  {
+    "cp_deficit": 0.0541,
+    "stat_penalty": 0.2647
+  },
+  {
+    "cp_deficit": 0.0550999999999999,
+    "stat_penalty": 0.2676
+  },
+  {
+    "cp_deficit": 0.0561,
+    "stat_penalty": 0.2703
+  },
+  {
+    "cp_deficit": 0.0571,
+    "stat_penalty": 0.2731
+  },
+  {
+    "cp_deficit": 0.0581,
+    "stat_penalty": 0.2758
+  },
+  {
+    "cp_deficit": 0.0591,
+    "stat_penalty": 0.2784
+  },
+  {
+    "cp_deficit": 0.0601,
+    "stat_penalty": 0.281
+  },
+  {
+    "cp_deficit": 0.0611,
+    "stat_penalty": 0.2836
+  },
+  {
+    "cp_deficit": 0.0621,
+    "stat_penalty": 0.2861
+  },
+  {
+    "cp_deficit": 0.0630999999999999,
+    "stat_penalty": 0.2885999999999999
+  },
+  {
+    "cp_deficit": 0.0641,
+    "stat_penalty": 0.291
+  },
+  {
+    "cp_deficit": 0.0650999999999999,
+    "stat_penalty": 0.2934
+  },
+  {
+    "cp_deficit": 0.0661,
+    "stat_penalty": 0.2958
+  },
+  {
+    "cp_deficit": 0.0670999999999999,
+    "stat_penalty": 0.2981
+  },
+  {
+    "cp_deficit": 0.0681,
+    "stat_penalty": 0.3004
+  },
+  {
+    "cp_deficit": 0.0691,
+    "stat_penalty": 0.3026
+  },
+  {
+    "cp_deficit": 0.0701,
+    "stat_penalty": 0.3048
+  },
+  {
+    "cp_deficit": 0.0711,
+    "stat_penalty": 0.307
+  },
+  {
+    "cp_deficit": 0.0721,
+    "stat_penalty": 0.3091
+  },
+  {
+    "cp_deficit": 0.0731,
+    "stat_penalty": 0.3111
+  },
+  {
+    "cp_deficit": 0.0741,
+    "stat_penalty": 0.3131
+  },
+  {
+    "cp_deficit": 0.0751,
+    "stat_penalty": 0.3151
+  },
+  {
+    "cp_deficit": 0.0761,
+    "stat_penalty": 0.3171
+  },
+  {
+    "cp_deficit": 0.0771,
+    "stat_penalty": 0.319
+  },
+  {
+    "cp_deficit": 0.0781,
+    "stat_penalty": 0.3208
+  },
+  {
+    "cp_deficit": 0.0791,
+    "stat_penalty": 0.3226
+  },
+  {
+    "cp_deficit": 0.0801,
+    "stat_penalty": 0.3243999999999999
+  },
+  {
+    "cp_deficit": 0.0810999999999999,
+    "stat_penalty": 0.3261
+  },
+  {
+    "cp_deficit": 0.0821,
+    "stat_penalty": 0.3278
+  },
+  {
+    "cp_deficit": 0.0831,
+    "stat_penalty": 0.3293999999999999
+  },
+  {
+    "cp_deficit": 0.0841,
+    "stat_penalty": 0.331
+  },
+  {
+    "cp_deficit": 0.0851,
+    "stat_penalty": 0.3326
+  },
+  {
+    "cp_deficit": 0.0861,
+    "stat_penalty": 0.3340999999999999
+  },
+  {
+    "cp_deficit": 0.0871,
+    "stat_penalty": 0.3356
+  },
+  {
+    "cp_deficit": 0.0881,
+    "stat_penalty": 0.337
+  },
+  {
+    "cp_deficit": 0.0891,
+    "stat_penalty": 0.3384
+  },
+  {
+    "cp_deficit": 0.0901,
+    "stat_penalty": 0.3398
+  },
+  {
+    "cp_deficit": 0.0911,
+    "stat_penalty": 0.3411
+  },
+  {
+    "cp_deficit": 0.0921,
+    "stat_penalty": 0.355
+  },
+  {
+    "cp_deficit": 0.0931,
+    "stat_penalty": 0.356
+  },
+  {
+    "cp_deficit": 0.0941,
+    "stat_penalty": 0.357
+  },
+  {
+    "cp_deficit": 0.0951,
+    "stat_penalty": 0.358
+  },
+  {
+    "cp_deficit": 0.0960999999999999,
+    "stat_penalty": 0.359
+  },
+  {
+    "cp_deficit": 0.0971,
+    "stat_penalty": 0.36
+  },
+  {
+    "cp_deficit": 0.0981,
+    "stat_penalty": 0.361
+  },
+  {
+    "cp_deficit": 0.0991,
+    "stat_penalty": 0.362
+  },
+  {
+    "cp_deficit": 0.1001,
+    "stat_penalty": 0.373
+  },
+  {
+    "cp_deficit": 0.1011,
+    "stat_penalty": 0.374
+  },
+  {
+    "cp_deficit": 0.1021,
+    "stat_penalty": 0.375
+  },
+  {
+    "cp_deficit": 0.1031,
+    "stat_penalty": 0.376
+  },
+  {
+    "cp_deficit": 0.1041,
+    "stat_penalty": 0.377
+  },
+  {
+    "cp_deficit": 0.1051,
+    "stat_penalty": 0.3779999999999999
+  },
+  {
+    "cp_deficit": 0.1061,
+    "stat_penalty": 0.379
+  },
+  {
+    "cp_deficit": 0.1071,
+    "stat_penalty": 0.38
+  },
+  {
+    "cp_deficit": 0.1081,
+    "stat_penalty": 0.381
+  },
+  {
+    "cp_deficit": 0.1091,
+    "stat_penalty": 0.382
+  },
+  {
+    "cp_deficit": 0.1101,
+    "stat_penalty": 0.3829999999999999
+  },
+  {
+    "cp_deficit": 0.1110999999999999,
+    "stat_penalty": 0.384
+  },
+  {
+    "cp_deficit": 0.1121,
+    "stat_penalty": 0.385
+  },
+  {
+    "cp_deficit": 0.1131,
+    "stat_penalty": 0.386
+  },
+  {
+    "cp_deficit": 0.1141,
+    "stat_penalty": 0.387
+  },
+  {
+    "cp_deficit": 0.1151,
+    "stat_penalty": 0.3879999999999999
+  },
+  {
+    "cp_deficit": 0.1161,
+    "stat_penalty": 0.389
+  },
+  {
+    "cp_deficit": 0.1171,
+    "stat_penalty": 0.39
+  },
+  {
+    "cp_deficit": 0.1181,
+    "stat_penalty": 0.391
+  },
+  {
+    "cp_deficit": 0.1191,
+    "stat_penalty": 0.392
+  },
+  {
+    "cp_deficit": 0.1201,
+    "stat_penalty": 0.3929999999999999
+  },
+  {
+    "cp_deficit": 0.1211,
+    "stat_penalty": 0.3939999999999999
+  },
+  {
+    "cp_deficit": 0.1221,
+    "stat_penalty": 0.395
+  },
+  {
+    "cp_deficit": 0.1231,
+    "stat_penalty": 0.396
+  },
+  {
+    "cp_deficit": 0.1241,
+    "stat_penalty": 0.397
+  },
+  {
+    "cp_deficit": 0.1251,
+    "stat_penalty": 0.3979999999999999
+  },
+  {
+    "cp_deficit": 0.1261,
+    "stat_penalty": 0.3989999999999999
+  },
+  {
+    "cp_deficit": 0.1271,
+    "stat_penalty": 0.4
+  },
+  {
+    "cp_deficit": 0.1281,
+    "stat_penalty": 0.401
+  },
+  {
+    "cp_deficit": 0.1291,
+    "stat_penalty": 0.402
+  },
+  {
+    "cp_deficit": 0.1301,
+    "stat_penalty": 0.4029999999999999
+  },
+  {
+    "cp_deficit": 0.1311,
+    "stat_penalty": 0.4039999999999999
+  },
+  {
+    "cp_deficit": 0.1321,
+    "stat_penalty": 0.405
+  },
+  {
+    "cp_deficit": 0.1331,
+    "stat_penalty": 0.406
+  },
+  {
+    "cp_deficit": 0.1341,
+    "stat_penalty": 0.407
+  },
+  {
+    "cp_deficit": 0.1351,
+    "stat_penalty": 0.408
+  },
+  {
+    "cp_deficit": 0.1361,
+    "stat_penalty": 0.409
+  },
+  {
+    "cp_deficit": 0.1371,
+    "stat_penalty": 0.41
+  },
+  {
+    "cp_deficit": 0.1381,
+    "stat_penalty": 0.411
+  },
+  {
+    "cp_deficit": 0.1391,
+    "stat_penalty": 0.412
+  },
+  {
+    "cp_deficit": 0.1401,
+    "stat_penalty": 0.413
+  },
+  {
+    "cp_deficit": 0.1411,
+    "stat_penalty": 0.414
+  },
+  {
+    "cp_deficit": 0.1421,
+    "stat_penalty": 0.415
+  },
+  {
+    "cp_deficit": 0.1431,
+    "stat_penalty": 0.416
+  },
+  {
+    "cp_deficit": 0.1441,
+    "stat_penalty": 0.417
+  },
+  {
+    "cp_deficit": 0.1451,
+    "stat_penalty": 0.418
+  },
+  {
+    "cp_deficit": 0.1461,
+    "stat_penalty": 0.419
+  },
+  {
+    "cp_deficit": 0.1471,
+    "stat_penalty": 0.42
+  },
+  {
+    "cp_deficit": 0.1481,
+    "stat_penalty": 0.421
+  },
+  {
+    "cp_deficit": 0.1491,
+    "stat_penalty": 0.422
+  },
+  {
+    "cp_deficit": 0.1501,
+    "stat_penalty": 0.423
+  },
+  {
+    "cp_deficit": 0.1510999999999999,
+    "stat_penalty": 0.424
+  },
+  {
+    "cp_deficit": 0.1521,
+    "stat_penalty": 0.425
+  },
+  {
+    "cp_deficit": 0.1531,
+    "stat_penalty": 0.426
+  },
+  {
+    "cp_deficit": 0.1541,
+    "stat_penalty": 0.427
+  },
+  {
+    "cp_deficit": 0.1551,
+    "stat_penalty": 0.428
+  },
+  {
+    "cp_deficit": 0.1561,
+    "stat_penalty": 0.429
+  },
+  {
+    "cp_deficit": 0.1571,
+    "stat_penalty": 0.43
+  },
+  {
+    "cp_deficit": 0.1581,
+    "stat_penalty": 0.431
+  },
+  {
+    "cp_deficit": 0.1591,
+    "stat_penalty": 0.432
+  },
+  {
+    "cp_deficit": 0.1601,
+    "stat_penalty": 0.433
+  },
+  {
+    "cp_deficit": 0.1611,
+    "stat_penalty": 0.434
+  },
+  {
+    "cp_deficit": 0.1621,
+    "stat_penalty": 0.435
+  },
+  {
+    "cp_deficit": 0.1631,
+    "stat_penalty": 0.436
+  },
+  {
+    "cp_deficit": 0.1641,
+    "stat_penalty": 0.437
+  },
+  {
+    "cp_deficit": 0.1651,
+    "stat_penalty": 0.4379999999999999
+  },
+  {
+    "cp_deficit": 0.1661,
+    "stat_penalty": 0.439
+  },
+  {
+    "cp_deficit": 0.1671,
+    "stat_penalty": 0.44
+  },
+  {
+    "cp_deficit": 0.1681,
+    "stat_penalty": 0.441
+  },
+  {
+    "cp_deficit": 0.1691,
+    "stat_penalty": 0.442
+  },
+  {
+    "cp_deficit": 0.1701,
+    "stat_penalty": 0.4429999999999999
+  },
+  {
+    "cp_deficit": 0.1711,
+    "stat_penalty": 0.444
+  },
+  {
+    "cp_deficit": 0.1721,
+    "stat_penalty": 0.445
+  },
+  {
+    "cp_deficit": 0.1730999999999999,
+    "stat_penalty": 0.446
+  },
+  {
+    "cp_deficit": 0.1741,
+    "stat_penalty": 0.447
+  },
+  {
+    "cp_deficit": 0.1751,
+    "stat_penalty": 0.4479999999999999
+  },
+  {
+    "cp_deficit": 0.1761,
+    "stat_penalty": 0.449
+  },
+  {
+    "cp_deficit": 0.1771,
+    "stat_penalty": 0.45
+  },
+  {
+    "cp_deficit": 0.1780999999999999,
+    "stat_penalty": 0.451
+  },
+  {
+    "cp_deficit": 0.1791,
+    "stat_penalty": 0.452
+  },
+  {
+    "cp_deficit": 0.1801,
+    "stat_penalty": 0.4529999999999999
+  },
+  {
+    "cp_deficit": 0.1810999999999999,
+    "stat_penalty": 0.4539999999999999
+  },
+  {
+    "cp_deficit": 0.1821,
+    "stat_penalty": 0.455
+  },
+  {
+    "cp_deficit": 0.1830999999999999,
+    "stat_penalty": 0.456
+  },
+  {
+    "cp_deficit": 0.1841,
+    "stat_penalty": 0.457
+  },
+  {
+    "cp_deficit": 0.1851,
+    "stat_penalty": 0.4579999999999999
+  },
+  {
+    "cp_deficit": 0.1861,
+    "stat_penalty": 0.4589999999999999
+  },
+  {
+    "cp_deficit": 0.1871,
+    "stat_penalty": 0.46
+  },
+  {
+    "cp_deficit": 0.1881,
+    "stat_penalty": 0.461
+  },
+  {
+    "cp_deficit": 0.1891,
+    "stat_penalty": 0.462
+  },
+  {
+    "cp_deficit": 0.1901,
+    "stat_penalty": 0.4629999999999999
+  },
+  {
+    "cp_deficit": 0.1911,
+    "stat_penalty": 0.4639999999999999
+  },
+  {
+    "cp_deficit": 0.1921,
+    "stat_penalty": 0.465
+  },
+  {
+    "cp_deficit": 0.1931,
+    "stat_penalty": 0.466
+  },
+  {
+    "cp_deficit": 0.1941,
+    "stat_penalty": 0.467
+  },
+  {
+    "cp_deficit": 0.1951,
+    "stat_penalty": 0.4679999999999999
+  },
+  {
+    "cp_deficit": 0.1961,
+    "stat_penalty": 0.469
+  },
+  {
+    "cp_deficit": 0.1971,
+    "stat_penalty": 0.47
+  },
+  {
+    "cp_deficit": 0.1981,
+    "stat_penalty": 0.471
+  },
+  {
+    "cp_deficit": 0.1991,
+    "stat_penalty": 0.472
+  },
+  {
+    "cp_deficit": 0.2001,
+    "stat_penalty": 0.473
+  },
+  {
+    "cp_deficit": 0.2011,
+    "stat_penalty": 0.474
+  },
+  {
+    "cp_deficit": 0.2021,
+    "stat_penalty": 0.475
+  },
+  {
+    "cp_deficit": 0.2030999999999999,
+    "stat_penalty": 0.476
+  },
+  {
+    "cp_deficit": 0.2041,
+    "stat_penalty": 0.477
+  },
+  {
+    "cp_deficit": 0.2051,
+    "stat_penalty": 0.478
+  },
+  {
+    "cp_deficit": 0.2061,
+    "stat_penalty": 0.479
+  },
+  {
+    "cp_deficit": 0.2071,
+    "stat_penalty": 0.48
+  },
+  {
+    "cp_deficit": 0.2080999999999999,
+    "stat_penalty": 0.481
+  },
+  {
+    "cp_deficit": 0.2091,
+    "stat_penalty": 0.482
+  },
+  {
+    "cp_deficit": 0.2101,
+    "stat_penalty": 0.483
+  },
+  {
+    "cp_deficit": 0.2110999999999999,
+    "stat_penalty": 0.484
+  },
+  {
+    "cp_deficit": 0.2121,
+    "stat_penalty": 0.485
+  },
+  {
+    "cp_deficit": 0.2130999999999999,
+    "stat_penalty": 0.486
+  },
+  {
+    "cp_deficit": 0.2141,
+    "stat_penalty": 0.487
+  },
+  {
+    "cp_deficit": 0.2151,
+    "stat_penalty": 0.488
+  },
+  {
+    "cp_deficit": 0.2161,
+    "stat_penalty": 0.489
+  },
+  {
+    "cp_deficit": 0.2171,
+    "stat_penalty": 0.49
+  },
+  {
+    "cp_deficit": 0.2181,
+    "stat_penalty": 0.491
+  },
+  {
+    "cp_deficit": 0.2191,
+    "stat_penalty": 0.492
+  },
+  {
+    "cp_deficit": 0.2201,
+    "stat_penalty": 0.493
+  },
+  {
+    "cp_deficit": 0.2211,
+    "stat_penalty": 0.494
+  },
+  {
+    "cp_deficit": 0.2221,
+    "stat_penalty": 0.495
+  },
+  {
+    "cp_deficit": 0.2231,
+    "stat_penalty": 0.496
+  },
+  {
+    "cp_deficit": 0.2241,
+    "stat_penalty": 0.497
+  },
+  {
+    "cp_deficit": 0.2251,
+    "stat_penalty": 0.498
+  },
+  {
+    "cp_deficit": 0.2261,
+    "stat_penalty": 0.499
+  },
+  {
+    "cp_deficit": 0.2271,
+    "stat_penalty": 0.5
+  },
+  {
+    "cp_deficit": 0.2281,
+    "stat_penalty": 0.501
+  },
+  {
+    "cp_deficit": 0.2291,
+    "stat_penalty": 0.502
+  },
+  {
+    "cp_deficit": 0.2301,
+    "stat_penalty": 0.503
+  },
+  {
+    "cp_deficit": 0.2311,
+    "stat_penalty": 0.504
+  },
+  {
+    "cp_deficit": 0.2321,
+    "stat_penalty": 0.505
+  },
+  {
+    "cp_deficit": 0.2330999999999999,
+    "stat_penalty": 0.506
+  },
+  {
+    "cp_deficit": 0.2341,
+    "stat_penalty": 0.507
+  },
+  {
+    "cp_deficit": 0.2351,
+    "stat_penalty": 0.508
+  },
+  {
+    "cp_deficit": 0.2361,
+    "stat_penalty": 0.509
+  },
+  {
+    "cp_deficit": 0.2371,
+    "stat_penalty": 0.51
+  },
+  {
+    "cp_deficit": 0.2380999999999999,
+    "stat_penalty": 0.511
+  },
+  {
+    "cp_deficit": 0.2391,
+    "stat_penalty": 0.512
+  },
+  {
+    "cp_deficit": 0.2401,
+    "stat_penalty": 0.513
+  },
+  {
+    "cp_deficit": 0.2410999999999999,
+    "stat_penalty": 0.514
+  },
+  {
+    "cp_deficit": 0.2421,
+    "stat_penalty": 0.515
+  },
+  {
+    "cp_deficit": 0.2430999999999999,
+    "stat_penalty": 0.516
+  },
+  {
+    "cp_deficit": 0.2441,
+    "stat_penalty": 0.517
+  },
+  {
+    "cp_deficit": 0.2451,
+    "stat_penalty": 0.518
+  },
+  {
+    "cp_deficit": 0.2460999999999999,
+    "stat_penalty": 0.519
+  },
+  {
+    "cp_deficit": 0.2471,
+    "stat_penalty": 0.52
+  },
+  {
+    "cp_deficit": 0.2481,
+    "stat_penalty": 0.521
+  },
+  {
+    "cp_deficit": 0.2491,
+    "stat_penalty": 0.522
+  },
+  {
+    "cp_deficit": 0.2501,
+    "stat_penalty": 0.523
+  },
+  {
+    "cp_deficit": 0.2511,
+    "stat_penalty": 0.524
+  },
+  {
+    "cp_deficit": 0.2521,
+    "stat_penalty": 0.525
+  },
+  {
+    "cp_deficit": 0.2531,
+    "stat_penalty": 0.526
+  },
+  {
+    "cp_deficit": 0.2541,
+    "stat_penalty": 0.527
+  },
+  {
+    "cp_deficit": 0.2551,
+    "stat_penalty": 0.528
+  },
+  {
+    "cp_deficit": 0.2561,
+    "stat_penalty": 0.529
+  },
+  {
+    "cp_deficit": 0.2571,
+    "stat_penalty": 0.53
+  },
+  {
+    "cp_deficit": 0.2581,
+    "stat_penalty": 0.531
+  },
+  {
+    "cp_deficit": 0.2591,
+    "stat_penalty": 0.532
+  },
+  {
+    "cp_deficit": 0.2601,
+    "stat_penalty": 0.5329999999999999
+  },
+  {
+    "cp_deficit": 0.2611,
+    "stat_penalty": 0.534
+  },
+  {
+    "cp_deficit": 0.2621,
+    "stat_penalty": 0.535
+  },
+  {
+    "cp_deficit": 0.2631,
+    "stat_penalty": 0.536
+  },
+  {
+    "cp_deficit": 0.2641,
+    "stat_penalty": 0.537
+  },
+  {
+    "cp_deficit": 0.2651,
+    "stat_penalty": 0.5379999999999999
+  },
+  {
+    "cp_deficit": 0.2661,
+    "stat_penalty": 0.539
+  },
+  {
+    "cp_deficit": 0.2671,
+    "stat_penalty": 0.54
+  },
+  {
+    "cp_deficit": 0.2681,
+    "stat_penalty": 0.541
+  },
+  {
+    "cp_deficit": 0.2691,
+    "stat_penalty": 0.542
+  },
+  {
+    "cp_deficit": 0.2701,
+    "stat_penalty": 0.5429999999999999
+  },
+  {
+    "cp_deficit": 0.2711,
+    "stat_penalty": 0.544
+  },
+  {
+    "cp_deficit": 0.2721,
+    "stat_penalty": 0.545
+  },
+  {
+    "cp_deficit": 0.2731,
+    "stat_penalty": 0.546
+  },
+  {
+    "cp_deficit": 0.2741,
+    "stat_penalty": 0.547
+  },
+  {
+    "cp_deficit": 0.2751,
+    "stat_penalty": 0.5479999999999999
+  },
+  {
+    "cp_deficit": 0.2761,
+    "stat_penalty": 0.5489999999999999
+  },
+  {
+    "cp_deficit": 0.2771,
+    "stat_penalty": 0.55
+  },
+  {
+    "cp_deficit": 0.2781,
+    "stat_penalty": 0.551
+  },
+  {
+    "cp_deficit": 0.2791,
+    "stat_penalty": 0.552
+  },
+  {
+    "cp_deficit": 0.2801,
+    "stat_penalty": 0.5529999999999999
+  },
+  {
+    "cp_deficit": 0.2811,
+    "stat_penalty": 0.5539999999999999
+  },
+  {
+    "cp_deficit": 0.2821,
+    "stat_penalty": 0.555
+  },
+  {
+    "cp_deficit": 0.2830999999999999,
+    "stat_penalty": 0.556
+  },
+  {
+    "cp_deficit": 0.2841,
+    "stat_penalty": 0.557
+  },
+  {
+    "cp_deficit": 0.2851,
+    "stat_penalty": 0.5579999999999999
+  },
+  {
+    "cp_deficit": 0.2861,
+    "stat_penalty": 0.5589999999999999
+  },
+  {
+    "cp_deficit": 0.2871,
+    "stat_penalty": 0.56
+  },
+  {
+    "cp_deficit": 0.2880999999999999,
+    "stat_penalty": 0.561
+  },
+  {
+    "cp_deficit": 0.2891,
+    "stat_penalty": 0.562
+  },
+  {
+    "cp_deficit": 0.2901,
+    "stat_penalty": 0.563
+  },
+  {
+    "cp_deficit": 0.2910999999999999,
+    "stat_penalty": 0.564
+  },
+  {
+    "cp_deficit": 0.2921,
+    "stat_penalty": 0.565
+  },
+  {
+    "cp_deficit": 0.2930999999999999,
+    "stat_penalty": 0.5660000000000001
+  },
+  {
+    "cp_deficit": 0.2941,
+    "stat_penalty": 0.5670000000000001
+  },
+  {
+    "cp_deficit": 0.2951,
+    "stat_penalty": 0.568
+  },
+  {
+    "cp_deficit": 0.2961,
+    "stat_penalty": 0.569
+  },
+  {
+    "cp_deficit": 0.2971,
+    "stat_penalty": 0.57
+  },
+  {
+    "cp_deficit": 0.2981,
+    "stat_penalty": 0.5710000000000001
+  },
+  {
+    "cp_deficit": 0.2991,
+    "stat_penalty": 0.5720000000000001
+  },
+  {
+    "cp_deficit": 0.3001,
+    "stat_penalty": 0.573
+  },
+  {
+    "cp_deficit": 0.3011,
+    "stat_penalty": 0.574
+  },
+  {
+    "cp_deficit": 0.3021,
+    "stat_penalty": 0.575
+  },
+  {
+    "cp_deficit": 0.3031,
+    "stat_penalty": 0.5760000000000001
+  },
+  {
+    "cp_deficit": 0.3041,
+    "stat_penalty": 0.5770000000000001
+  },
+  {
+    "cp_deficit": 0.3051,
+    "stat_penalty": 0.578
+  },
+  {
+    "cp_deficit": 0.3061,
+    "stat_penalty": 0.579
+  },
+  {
+    "cp_deficit": 0.3071,
+    "stat_penalty": 0.58
+  },
+  {
+    "cp_deficit": 0.3081,
+    "stat_penalty": 0.581
+  },
+  {
+    "cp_deficit": 0.3091,
+    "stat_penalty": 0.5820000000000001
+  },
+  {
+    "cp_deficit": 0.3101,
+    "stat_penalty": 0.583
+  },
+  {
+    "cp_deficit": 0.3111,
+    "stat_penalty": 0.584
+  },
+  {
+    "cp_deficit": 0.3121,
+    "stat_penalty": 0.585
+  },
+  {
+    "cp_deficit": 0.3131,
+    "stat_penalty": 0.586
+  },
+  {
+    "cp_deficit": 0.3141,
+    "stat_penalty": 0.5870000000000001
+  },
+  {
+    "cp_deficit": 0.3151,
+    "stat_penalty": 0.588
+  },
+  {
+    "cp_deficit": 0.3161,
+    "stat_penalty": 0.589
+  },
+  {
+    "cp_deficit": 0.3171,
+    "stat_penalty": 0.59
+  },
+  {
+    "cp_deficit": 0.3181,
+    "stat_penalty": 0.591
+  },
+  {
+    "cp_deficit": 0.3191,
+    "stat_penalty": 0.5920000000000001
+  },
+  {
+    "cp_deficit": 0.3201,
+    "stat_penalty": 0.593
+  },
+  {
+    "cp_deficit": 0.3211,
+    "stat_penalty": 0.594
+  },
+  {
+    "cp_deficit": 0.3221,
+    "stat_penalty": 0.595
+  },
+  {
+    "cp_deficit": 0.3231,
+    "stat_penalty": 0.596
+  },
+  {
+    "cp_deficit": 0.3240999999999999,
+    "stat_penalty": 0.597
+  },
+  {
+    "cp_deficit": 0.3251,
+    "stat_penalty": 0.598
+  },
+  {
+    "cp_deficit": 0.3261,
+    "stat_penalty": 0.599
+  },
+  {
+    "cp_deficit": 0.3271,
+    "stat_penalty": 0.6
+  },
+  {
+    "cp_deficit": 0.3281,
+    "stat_penalty": 0.601
+  },
+  {
+    "cp_deficit": 0.3290999999999999,
+    "stat_penalty": 0.602
+  },
+  {
+    "cp_deficit": 0.3301,
+    "stat_penalty": 0.603
+  },
+  {
+    "cp_deficit": 0.3311,
+    "stat_penalty": 0.604
+  },
+  {
+    "cp_deficit": 0.3321,
+    "stat_penalty": 0.605
+  },
+  {
+    "cp_deficit": 0.3331,
+    "stat_penalty": 0.606
+  },
+  {
+    "cp_deficit": 0.3340999999999999,
+    "stat_penalty": 0.607
+  },
+  {
+    "cp_deficit": 0.3350999999999999,
+    "stat_penalty": 0.608
+  },
+  {
+    "cp_deficit": 0.3361,
+    "stat_penalty": 0.609
+  },
+  {
+    "cp_deficit": 0.3371,
+    "stat_penalty": 0.61
+  },
+  {
+    "cp_deficit": 0.3381,
+    "stat_penalty": 0.611
+  },
+  {
+    "cp_deficit": 0.3390999999999999,
+    "stat_penalty": 0.612
+  },
+  {
+    "cp_deficit": 0.3400999999999999,
+    "stat_penalty": 0.613
+  },
+  {
+    "cp_deficit": 0.3411,
+    "stat_penalty": 0.614
+  },
+  {
+    "cp_deficit": 0.3421,
+    "stat_penalty": 0.615
+  },
+  {
+    "cp_deficit": 0.3431,
+    "stat_penalty": 0.616
+  },
+  {
+    "cp_deficit": 0.3440999999999999,
+    "stat_penalty": 0.617
+  },
+  {
+    "cp_deficit": 0.3450999999999999,
+    "stat_penalty": 0.618
+  },
+  {
+    "cp_deficit": 0.3461,
+    "stat_penalty": 0.619
+  },
+  {
+    "cp_deficit": 0.3471,
+    "stat_penalty": 0.62
+  },
+  {
+    "cp_deficit": 0.3481,
+    "stat_penalty": 0.621
+  },
+  {
+    "cp_deficit": 0.3490999999999999,
+    "stat_penalty": 0.622
+  },
+  {
+    "cp_deficit": 0.3500999999999999,
+    "stat_penalty": 0.623
+  },
+  {
+    "cp_deficit": 0.3510999999999999,
+    "stat_penalty": 0.624
+  },
+  {
+    "cp_deficit": 0.3521,
+    "stat_penalty": 0.625
+  },
+  {
+    "cp_deficit": 0.3531,
+    "stat_penalty": 0.626
+  },
+  {
+    "cp_deficit": 0.3540999999999999,
+    "stat_penalty": 0.627
+  },
+  {
+    "cp_deficit": 0.3550999999999999,
+    "stat_penalty": 0.628
+  },
+  {
+    "cp_deficit": 0.3560999999999999,
+    "stat_penalty": 0.629
+  },
+  {
+    "cp_deficit": 0.3571,
+    "stat_penalty": 0.63
+  },
+  {
+    "cp_deficit": 0.3581,
+    "stat_penalty": 0.631
+  },
+  {
+    "cp_deficit": 0.3591,
+    "stat_penalty": 0.632
+  },
+  {
+    "cp_deficit": 0.3601,
+    "stat_penalty": 0.633
+  },
+  {
+    "cp_deficit": 0.3611,
+    "stat_penalty": 0.634
+  },
+  {
+    "cp_deficit": 0.3621,
+    "stat_penalty": 0.635
+  },
+  {
+    "cp_deficit": 0.3631,
+    "stat_penalty": 0.636
+  },
+  {
+    "cp_deficit": 0.3641,
+    "stat_penalty": 0.637
+  },
+  {
+    "cp_deficit": 0.3651,
+    "stat_penalty": 0.638
+  },
+  {
+    "cp_deficit": 0.3661,
+    "stat_penalty": 0.639
+  },
+  {
+    "cp_deficit": 0.3671,
+    "stat_penalty": 0.64
+  },
+  {
+    "cp_deficit": 0.3681,
+    "stat_penalty": 0.6409999999999999
+  },
+  {
+    "cp_deficit": 0.3691,
+    "stat_penalty": 0.642
+  },
+  {
+    "cp_deficit": 0.3701,
+    "stat_penalty": 0.643
+  },
+  {
+    "cp_deficit": 0.3711,
+    "stat_penalty": 0.644
+  },
+  {
+    "cp_deficit": 0.3721,
+    "stat_penalty": 0.645
+  },
+  {
+    "cp_deficit": 0.3731,
+    "stat_penalty": 0.6459999999999999
+  },
+  {
+    "cp_deficit": 0.3741,
+    "stat_penalty": 0.647
+  },
+  {
+    "cp_deficit": 0.3751,
+    "stat_penalty": 0.648
+  },
+  {
+    "cp_deficit": 0.3761,
+    "stat_penalty": 0.649
+  },
+  {
+    "cp_deficit": 0.3771,
+    "stat_penalty": 0.65
+  },
+  {
+    "cp_deficit": 0.3781,
+    "stat_penalty": 0.6509999999999999
+  },
+  {
+    "cp_deficit": 0.3791,
+    "stat_penalty": 0.652
+  },
+  {
+    "cp_deficit": 0.3801,
+    "stat_penalty": 0.653
+  },
+  {
+    "cp_deficit": 0.3811,
+    "stat_penalty": 0.654
+  },
+  {
+    "cp_deficit": 0.3821,
+    "stat_penalty": 0.655
+  },
+  {
+    "cp_deficit": 0.3831,
+    "stat_penalty": 0.6559999999999999
+  },
+  {
+    "cp_deficit": 0.3840999999999999,
+    "stat_penalty": 0.657
+  },
+  {
+    "cp_deficit": 0.3851,
+    "stat_penalty": 0.6579999999999999
+  },
+  {
+    "cp_deficit": 0.3861,
+    "stat_penalty": 0.659
+  },
+  {
+    "cp_deficit": 0.3871,
+    "stat_penalty": 0.66
+  },
+  {
+    "cp_deficit": 0.3881,
+    "stat_penalty": 0.6609999999999999
+  },
+  {
+    "cp_deficit": 0.3890999999999999,
+    "stat_penalty": 0.662
+  },
+  {
+    "cp_deficit": 0.3901,
+    "stat_penalty": 0.6629999999999999
+  },
+  {
+    "cp_deficit": 0.3911,
+    "stat_penalty": 0.664
+  },
+  {
+    "cp_deficit": 0.3921,
+    "stat_penalty": 0.665
+  },
+  {
+    "cp_deficit": 0.3931,
+    "stat_penalty": 0.6659999999999999
+  },
+  {
+    "cp_deficit": 0.3940999999999999,
+    "stat_penalty": 0.667
+  },
+  {
+    "cp_deficit": 0.3951,
+    "stat_penalty": 0.6679999999999999
+  },
+  {
+    "cp_deficit": 0.3961,
+    "stat_penalty": 0.669
+  },
+  {
+    "cp_deficit": 0.3971,
+    "stat_penalty": 0.67
+  },
+  {
+    "cp_deficit": 0.3981,
+    "stat_penalty": 0.6709999999999999
+  },
+  {
+    "cp_deficit": 0.3990999999999999,
+    "stat_penalty": 0.672
+  },
+  {
+    "cp_deficit": 0.4000999999999999,
+    "stat_penalty": 0.6729999999999999
+  },
+  {
+    "cp_deficit": 0.4011,
+    "stat_penalty": 0.674
+  },
+  {
+    "cp_deficit": 0.4021,
+    "stat_penalty": 0.675
+  },
+  {
+    "cp_deficit": 0.4031,
+    "stat_penalty": 0.6759999999999999
+  },
+  {
+    "cp_deficit": 0.4040999999999999,
+    "stat_penalty": 0.677
+  },
+  {
+    "cp_deficit": 0.4050999999999999,
+    "stat_penalty": 0.6779999999999999
+  },
+  {
+    "cp_deficit": 0.4061,
+    "stat_penalty": 0.679
+  },
+  {
+    "cp_deficit": 0.4071,
+    "stat_penalty": 0.68
+  },
+  {
+    "cp_deficit": 0.4081,
+    "stat_penalty": 0.6809999999999999
+  },
+  {
+    "cp_deficit": 0.4090999999999999,
+    "stat_penalty": 0.682
+  },
+  {
+    "cp_deficit": 0.4100999999999999,
+    "stat_penalty": 0.6829999999999999
+  },
+  {
+    "cp_deficit": 0.4111,
+    "stat_penalty": 0.684
+  },
+  {
+    "cp_deficit": 0.4121,
+    "stat_penalty": 0.685
+  },
+  {
+    "cp_deficit": 0.4131,
+    "stat_penalty": 0.6859999999999999
+  },
+  {
+    "cp_deficit": 0.4140999999999999,
+    "stat_penalty": 0.687
+  },
+  {
+    "cp_deficit": 0.4150999999999999,
+    "stat_penalty": 0.688
+  },
+  {
+    "cp_deficit": 0.4160999999999999,
+    "stat_penalty": 0.6890000000000001
+  },
+  {
+    "cp_deficit": 0.4171,
+    "stat_penalty": 0.69
+  },
+  {
+    "cp_deficit": 0.4181,
+    "stat_penalty": 0.691
+  },
+  {
+    "cp_deficit": 0.4191,
+    "stat_penalty": 0.6920000000000001
+  },
+  {
+    "cp_deficit": 0.4201,
+    "stat_penalty": 0.693
+  },
+  {
+    "cp_deficit": 0.4211,
+    "stat_penalty": 0.6940000000000001
+  },
+  {
+    "cp_deficit": 0.4221,
+    "stat_penalty": 0.695
+  },
+  {
+    "cp_deficit": 0.4231,
+    "stat_penalty": 0.696
+  },
+  {
+    "cp_deficit": 0.4241,
+    "stat_penalty": 0.6970000000000001
+  },
+  {
+    "cp_deficit": 0.4251,
+    "stat_penalty": 0.698
+  },
+  {
+    "cp_deficit": 0.4261,
+    "stat_penalty": 0.6990000000000001
+  },
+  {
+    "cp_deficit": 0.4271,
+    "stat_penalty": 0.7
+  },
+  {
+    "cp_deficit": 0.4281,
+    "stat_penalty": 0.701
+  },
+  {
+    "cp_deficit": 0.4291,
+    "stat_penalty": 0.7020000000000001
+  },
+  {
+    "cp_deficit": 0.4301,
+    "stat_penalty": 0.703
+  },
+  {
+    "cp_deficit": 0.4311,
+    "stat_penalty": 0.7040000000000001
+  },
+  {
+    "cp_deficit": 0.4321,
+    "stat_penalty": 0.705
+  },
+  {
+    "cp_deficit": 0.4331,
+    "stat_penalty": 0.706
+  },
+  {
+    "cp_deficit": 0.4341,
+    "stat_penalty": 0.7070000000000001
+  },
+  {
+    "cp_deficit": 0.4351,
+    "stat_penalty": 0.708
+  },
+  {
+    "cp_deficit": 0.4361,
+    "stat_penalty": 0.7090000000000001
+  },
+  {
+    "cp_deficit": 0.4371,
+    "stat_penalty": 0.71
+  },
+  {
+    "cp_deficit": 0.4381,
+    "stat_penalty": 0.711
+  },
+  {
+    "cp_deficit": 0.4391,
+    "stat_penalty": 0.7120000000000001
+  },
+  {
+    "cp_deficit": 0.4401,
+    "stat_penalty": 0.713
+  },
+  {
+    "cp_deficit": 0.4411,
+    "stat_penalty": 0.7140000000000001
+  },
+  {
+    "cp_deficit": 0.4421,
+    "stat_penalty": 0.715
+  },
+  {
+    "cp_deficit": 0.4431,
+    "stat_penalty": 0.716
+  },
+  {
+    "cp_deficit": 0.4440999999999999,
+    "stat_penalty": 0.7170000000000001
+  },
+  {
+    "cp_deficit": 0.4451,
+    "stat_penalty": 0.718
+  },
+  {
+    "cp_deficit": 0.4461,
+    "stat_penalty": 0.7190000000000001
+  },
+  {
+    "cp_deficit": 0.4471,
+    "stat_penalty": 0.72
+  },
+  {
+    "cp_deficit": 0.4481,
+    "stat_penalty": 0.721
+  },
+  {
+    "cp_deficit": 0.4490999999999999,
+    "stat_penalty": 0.722
+  },
+  {
+    "cp_deficit": 0.4501,
+    "stat_penalty": 0.723
+  },
+  {
+    "cp_deficit": 0.4511,
+    "stat_penalty": 0.7240000000000001
+  },
+  {
+    "cp_deficit": 0.4521,
+    "stat_penalty": 0.725
+  },
+  {
+    "cp_deficit": 0.4531,
+    "stat_penalty": 0.726
+  },
+  {
+    "cp_deficit": 0.4540999999999999,
+    "stat_penalty": 0.727
+  },
+  {
+    "cp_deficit": 0.4551,
+    "stat_penalty": 0.728
+  },
+  {
+    "cp_deficit": 0.4561,
+    "stat_penalty": 0.7290000000000001
+  },
+  {
+    "cp_deficit": 0.4571,
+    "stat_penalty": 0.73
+  },
+  {
+    "cp_deficit": 0.4581,
+    "stat_penalty": 0.731
+  },
+  {
+    "cp_deficit": 0.4590999999999999,
+    "stat_penalty": 0.732
+  },
+  {
+    "cp_deficit": 0.4600999999999999,
+    "stat_penalty": 0.733
+  },
+  {
+    "cp_deficit": 0.4611,
+    "stat_penalty": 0.7340000000000001
+  },
+  {
+    "cp_deficit": 0.4621,
+    "stat_penalty": 0.735
+  },
+  {
+    "cp_deficit": 0.4631,
+    "stat_penalty": 0.736
+  },
+  {
+    "cp_deficit": 0.4640999999999999,
+    "stat_penalty": 0.737
+  },
+  {
+    "cp_deficit": 0.4650999999999999,
+    "stat_penalty": 0.738
+  },
+  {
+    "cp_deficit": 0.4661,
+    "stat_penalty": 0.7390000000000001
+  },
+  {
+    "cp_deficit": 0.4671,
+    "stat_penalty": 0.74
+  },
+  {
+    "cp_deficit": 0.4681,
+    "stat_penalty": 0.741
+  },
+  {
+    "cp_deficit": 0.4690999999999999,
+    "stat_penalty": 0.742
+  },
+  {
+    "cp_deficit": 0.4700999999999999,
+    "stat_penalty": 0.743
+  },
+  {
+    "cp_deficit": 0.4711,
+    "stat_penalty": 0.7440000000000001
+  },
+  {
+    "cp_deficit": 0.4721,
+    "stat_penalty": 0.745
+  },
+  {
+    "cp_deficit": 0.4731,
+    "stat_penalty": 0.746
+  },
+  {
+    "cp_deficit": 0.4740999999999999,
+    "stat_penalty": 0.747
+  },
+  {
+    "cp_deficit": 0.4750999999999999,
+    "stat_penalty": 0.748
+  },
+  {
+    "cp_deficit": 0.4760999999999999,
+    "stat_penalty": 0.7490000000000001
+  },
+  {
+    "cp_deficit": 0.4771,
+    "stat_penalty": 0.75
+  },
+  {
+    "cp_deficit": 0.4781,
+    "stat_penalty": 0.7509999999999999
+  },
+  {
+    "cp_deficit": 0.4790999999999999,
+    "stat_penalty": 0.752
+  },
+  {
+    "cp_deficit": 0.4800999999999999,
+    "stat_penalty": 0.753
+  },
+  {
+    "cp_deficit": 0.4810999999999999,
+    "stat_penalty": 0.754
+  },
+  {
+    "cp_deficit": 0.4821,
+    "stat_penalty": 0.755
+  },
+  {
+    "cp_deficit": 0.4831,
+    "stat_penalty": 0.7559999999999999
+  },
+  {
+    "cp_deficit": 0.4841,
+    "stat_penalty": 0.757
+  },
+  {
+    "cp_deficit": 0.4851,
+    "stat_penalty": 0.758
+  },
+  {
+    "cp_deficit": 0.4861,
+    "stat_penalty": 0.759
+  },
+  {
+    "cp_deficit": 0.4871,
+    "stat_penalty": 0.76
+  },
+  {
+    "cp_deficit": 0.4881,
+    "stat_penalty": 0.7609999999999999
+  },
+  {
+    "cp_deficit": 0.4891,
+    "stat_penalty": 0.762
+  },
+  {
+    "cp_deficit": 0.4901,
+    "stat_penalty": 0.763
+  },
+  {
+    "cp_deficit": 0.4911,
+    "stat_penalty": 0.764
+  },
+  {
+    "cp_deficit": 0.4921,
+    "stat_penalty": 0.765
+  },
+  {
+    "cp_deficit": 0.4931,
+    "stat_penalty": 0.7659999999999999
+  },
+  {
+    "cp_deficit": 0.4941,
+    "stat_penalty": 0.767
+  },
+  {
+    "cp_deficit": 0.4951,
+    "stat_penalty": 0.768
+  },
+  {
+    "cp_deficit": 0.4961,
+    "stat_penalty": 0.769
+  },
+  {
+    "cp_deficit": 0.4971,
+    "stat_penalty": 0.77
+  },
+  {
+    "cp_deficit": 0.4981,
+    "stat_penalty": 0.7709999999999999
+  },
+  {
+    "cp_deficit": 0.4991,
+    "stat_penalty": 0.9
+  }
+]
