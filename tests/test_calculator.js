@@ -85,10 +85,10 @@ function runTests() {
   // Test 4: Get Deficit Color Class
   test('getDeficitColorClass returns correct colors', () => {
     const calc = new CPDeficitCalculator();
-    if (calc.getDeficitColorClass(0.1) !== 'bg-success') throw new Error('Low deficit should be green');
-    if (calc.getDeficitColorClass(0.27) !== 'bg-warning text-dark') throw new Error('Minor deficit should be yellow');
-    if (calc.getDeficitColorClass(0.32) !== 'bg-warning') throw new Error('Moderate deficit should be orange');
-    if (calc.getDeficitColorClass(0.4) !== 'bg-danger') throw new Error('High deficit should be red');
+    if (calc.getDeficitColorClass(0.1) !== 'success') throw new Error('Low deficit should be success');
+    if (calc.getDeficitColorClass(0.27) !== 'caution') throw new Error('Minor deficit should be caution');
+    if (calc.getDeficitColorClass(0.32) !== 'warning') throw new Error('Moderate deficit should be warning');
+    if (calc.getDeficitColorClass(0.4) !== 'danger') throw new Error('High deficit should be danger');
   });
 
   // Test 5: Format Percentage

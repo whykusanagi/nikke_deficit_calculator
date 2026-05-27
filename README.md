@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
 <div align="center" style="margin: 2rem 0;">
-<p align="center"><img src="https://s3.whykusanagi.xyz/art/Celeste_Legs_Transparent.png" alt="NIKKE CP Deficit Calculator" width="400"></p>
+<p align="center"><img src="https://s3.whykusanagi.xyz/tools/thumbnail-generator/assets/characters/headshots/shy.png" alt="NIKKE CP Deficit Calculator" width="400"></p>
 </div>
 
 ## Overview
