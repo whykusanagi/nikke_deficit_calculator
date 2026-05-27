@@ -5,24 +5,8 @@
 
 let calculator;
 
-// Initialize calculator when DOM is ready
-document.addEventListener('DOMContentLoaded', async () => {
+document.addEventListener('DOMContentLoaded', () => {
   calculator = new CPDeficitCalculator();
-  
-  // Load lookup table for accurate low/high range calculations
-  try {
-    const response = await fetch('data/stat_penalty_lookup.json');
-    if (response.ok) {
-      const lookupData = await response.json();
-      calculator.loadLookupTable(lookupData);
-      console.log('Lookup table loaded successfully');
-    } else {
-      console.warn('Could not load lookup table, using power law fallback');
-    }
-  } catch (error) {
-    console.warn('Error loading lookup table:', error);
-    console.warn('Using power law fallback');
-  }
 
   const stageCpInput = document.getElementById("stage_cp");
   const teamCpInput = document.getElementById("team_cp");
@@ -30,41 +14,33 @@ document.addEventListener('DOMContentLoaded', async () => {
   const statPenaltyDisplay = document.getElementById("stat_penalty_value");
   const errorDisplay = document.getElementById("error");
 
-  // Set default values
   stageCpInput.value = 10000;
   teamCpInput.value = 8000;
 
-  /**
-   * Update calculator outputs
-   */
+  function clearResults() {
+    cpDeficitDisplay.textContent = '—';
+    statPenaltyDisplay.textContent = '—';
+    statPenaltyDisplay.className = 'result-value stat-penalty-display';
+    statPenaltyDisplay.removeAttribute('data-color');
+  }
+
   function updateOutputs() {
     try {
       const stageCp = parseFloat(stageCpInput.value);
       const teamCp = parseFloat(teamCpInput.value);
-
-      // Validate inputs
-      if (!calculator.validateCP(stageCp) || !calculator.validateCP(teamCp)) {
-        throw new Error('Please enter valid positive numbers for both CP values');
-      }
-
-      // Calculate results
       const results = calculator.calculate(stageCp, teamCp);
 
-      // Update displays
       cpDeficitDisplay.textContent = results.cpDeficitFormatted;
       statPenaltyDisplay.textContent = results.statPenaltyFormatted;
-
-      // Update color class (corrupted-theme compatible)
       statPenaltyDisplay.className = `result-value stat-penalty-display ${results.colorClass}`;
       statPenaltyDisplay.setAttribute('data-color', results.colorClass);
 
-      // Hide error if calculation succeeded
       if (errorDisplay) {
         errorDisplay.style.display = 'none';
         errorDisplay.textContent = '';
       }
     } catch (error) {
-      // Show error message
+      clearResults();
       if (errorDisplay) {
         errorDisplay.textContent = error.message;
         errorDisplay.style.display = 'block';
@@ -73,12 +49,24 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   }
 
-  // Add event listeners
   stageCpInput.addEventListener("input", updateOutputs);
-  stageCpInput.addEventListener("change", updateOutputs);
   teamCpInput.addEventListener("input", updateOutputs);
-  teamCpInput.addEventListener("change", updateOutputs);
 
-  // Initial calculation
   updateOutputs();
+
+  // Load lookup table in the background; recompute once it's ready so users
+  // get accurate low/high range values without waiting on the fetch.
+  fetch('data/stat_penalty_lookup.json')
+    .then(response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then(lookupData => {
+      calculator.loadLookupTable(lookupData);
+      updateOutputs();
+      console.log('Lookup table loaded successfully');
+    })
+    .catch(error => {
+      console.warn('Could not load lookup table, using power law fallback:', error);
+    });
 });
