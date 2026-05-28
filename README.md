@@ -136,31 +136,31 @@ CP Deficit = max(0, Stage CP - Team CP) / Stage CP
 
 ### Stat Penalty Formula
 
-The stat penalty uses a **piecewise function** for maximum accuracy:
+The calculator ships with **two algorithms**. By default it uses interpolated lookup against the 501-point dataset; a power-law fit is kept as an opt-in for comparison.
 
-#### Piecewise Function
+#### Default: lookup with linear interpolation
 
-1. **Low Range (< 1% deficit)**: Lookup table for accuracy
-   - Handles initial jump (5% penalty at 0.01% deficit)
-   - Uses binary search with linear interpolation
+For any deficit `d`, bisect into the sorted 501-point dataset and linearly interpolate between the two neighboring entries. Below the first nonzero data point (0.0001), returns the first entry's penalty (5%) — honors the game's "any nonzero deficit triggers a 5pp jump" mechanic. Above the last entry, clamps.
 
-2. **Main Range (1% - 48% deficit)**: Power law formula
-   ```
-   Stat Penalty = a × CP_Deficit^b
-   ```
-   - `a = 1.0399570265430915`
-   - `b = 0.478827201593444`
-   - **R² Score**: 0.995062 (99.5% variance explained)
-   - **RMSE**: Optimized for this range
+**Why default:** the underlying function is two clean regimes — a curved ramp from 0 to ~10% deficit, then a perfectly straight line (`penalty = deficit + 0.2729`, slope 1.0, zero deviation across 250 sampled points) from 10% onward. Interpolating directly on the dataset is exact; no model error.
 
-3. **High Range (> 48% deficit)**: Lookup table for accuracy
-   - Handles potential discontinuities at extreme values
-   - Uses binary search with linear interpolation
+#### Opt-in: power-law fit
 
-**Dataset**: Included in repository (self-contained)  
-**Data Points**: 501 points covering 0.00% to 49.91% CP deficit  
-**Lookup Table**: 501 entries for precise low/high range calculations  
-**Data Files**: `data/stat_penalty_data.csv`, `data/stat_penalty_lookup.json`
+```
+Stat Penalty = 1.04 × deficit^0.479
+```
+
+R² = 0.9951 against the 1%–48% subset. Activate with `?algo=power_law` in the URL. The result panel displays an `algorithm: power_law` badge so screenshots and shared links are self-identifying.
+
+This mode is preserved for comparison and historical purposes. It systematically over-predicts penalty by 1–2pp in the 15–35% decision zone.
+
+#### Comparing the two
+
+![Power law vs lookup data](docs/fit_comparison.png)
+
+The blue curve is the raw data; the red dashed curve is the power law. The residual panel shows the over-prediction in the practical decision zone.
+
+**Dataset**: 501 points covering 0% to 49.91% CP deficit. Data files: `data/stat_penalty_data.csv`, `data/stat_penalty_lookup.json`.
 
 ### Color Coding
 

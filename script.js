@@ -1,12 +1,16 @@
 /**
  * Main script for CP Deficit Calculator
- * Handles UI interactions and calculator initialization
+ * Handles UI interactions and calculator initialization.
  */
 
 let calculator;
 
 document.addEventListener('DOMContentLoaded', () => {
-  calculator = new CPDeficitCalculator();
+  const allowedAlgos = ['lookup', 'power_law'];
+  const requestedAlgo = new URLSearchParams(location.search).get('algo');
+  const algorithm = allowedAlgos.includes(requestedAlgo) ? requestedAlgo : 'lookup';
+
+  calculator = new CPDeficitCalculator({ algorithm });
 
   const stageCpInput = document.getElementById("stage_cp");
   const teamCpInput = document.getElementById("team_cp");
@@ -16,6 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   stageCpInput.value = 10000;
   teamCpInput.value = 8000;
+
+  // Render the algorithm badge when running a non-default mode, so a shared
+  // ?algo=power_law link is self-identifying in screenshots.
+  if (algorithm !== 'lookup' && statPenaltyDisplay && statPenaltyDisplay.parentNode) {
+    const badge = document.createElement('span');
+    badge.className = 'algo-badge';
+    badge.textContent = `algorithm: ${algorithm}`;
+    statPenaltyDisplay.parentNode.appendChild(badge);
+  }
 
   function clearResults() {
     cpDeficitDisplay.textContent = '—';
@@ -55,7 +68,7 @@ document.addEventListener('DOMContentLoaded', () => {
   updateOutputs();
 
   // Load lookup table in the background; recompute once it's ready so users
-  // get accurate low/high range values without waiting on the fetch.
+  // get accurate values without waiting on the fetch.
   fetch('data/stat_penalty_lookup.json')
     .then(response => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
