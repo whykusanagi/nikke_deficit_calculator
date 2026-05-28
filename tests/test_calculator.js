@@ -98,7 +98,35 @@ function runTests() {
     if (calc.formatPercentage(0.5) !== '50.00%') throw new Error('Should format as 50.00%');
   });
 
-  // Test 6: Complete Calculate Function
+  // Test 6: Algorithm modes
+  test('lookup mode interpolates between two known neighbors', () => {
+    const calc = new CPDeficitCalculator({ algorithm: 'lookup' });
+    calc.loadLookupTable([
+      { cp_deficit: 0.10, stat_penalty: 0.373 },
+      { cp_deficit: 0.20, stat_penalty: 0.473 }
+    ]);
+    // Halfway between the two anchors should be the midpoint: (0.373+0.473)/2 = 0.423
+    const penalty = calc.calculateStatPenalty(0.15);
+    if (Math.abs(penalty - 0.423) > 1e-9) {
+      throw new Error(`Expected interpolated 0.423, got ${penalty}`);
+    }
+  });
+
+  test('power_law mode ignores the lookup table', () => {
+    const calc = new CPDeficitCalculator({ algorithm: 'power_law' });
+    // Even with a lookup table that would say "0 at 0.20", power-law mode uses a·d^b.
+    calc.loadLookupTable([
+      { cp_deficit: 0.10, stat_penalty: 0.0 },
+      { cp_deficit: 0.20, stat_penalty: 0.0 }
+    ]);
+    const penalty = calc.calculateStatPenalty(0.20);
+    const expected = 1.0399570265430915 * Math.pow(0.20, 0.478827201593444);
+    if (Math.abs(penalty - expected) > 1e-9) {
+      throw new Error(`Expected power-law ${expected}, got ${penalty}`);
+    }
+  });
+
+  // Test 7: Complete Calculate Function
   test('calculate returns all required fields', () => {
     const calc = new CPDeficitCalculator();
     const results = calc.calculate(10000, 8000);

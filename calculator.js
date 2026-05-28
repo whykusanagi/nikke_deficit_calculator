@@ -1,203 +1,148 @@
 /**
  * NIKKE CP Deficit Calculator
- * 
+ *
  * Core calculator logic for determining Combat Power (CP) deficit and stat penalties.
  */
 
+const ALGORITHMS = Object.freeze({
+  LOOKUP: 'lookup',       // Linear interpolation across the 501-point dataset (default)
+  POWER_LAW: 'power_law'  // a · d^b — original fit, ~1pp pessimistic in the 15-35% zone
+});
+
+const DEFAULT_ALGORITHM = ALGORITHMS.LOOKUP;
+
 class CPDeficitCalculator {
-  constructor() {
-    // Piecewise function parameters fitted to included dataset
-    // Data: 501 points from 0.00% to 49.91% CP deficit
-    // Uses piecewise function: lookup table for low/high ranges, power law for main range
-    this.piecewiseParams = {
-      lowRangeThreshold: 0.01,   // Use lookup for < 1%
-      highRangeThreshold: 0.48,   // Use lookup for > 48%
-      mainRange: {
-        a: 1.0399570265430915,    // Optimized for 1% - 48% range
-        b: 0.478827201593444,      // R² = 0.995062
-      }
+  constructor(options = {}) {
+    const requested = options.algorithm || DEFAULT_ALGORITHM;
+    // Unknown values silently coerce to the default — keeps the URL surface forgiving.
+    this.algorithm = Object.values(ALGORITHMS).includes(requested) ? requested : DEFAULT_ALGORITHM;
+
+    // Power-law parameters, fitted to the 1%–48% subset of the dataset.
+    this.powerLawParams = {
+      a: 1.0399570265430915,
+      b: 0.478827201593444
     };
-    
-    // Lookup table will be loaded asynchronously
+
     this.lookupTable = null;
     this.lookupTableLoaded = false;
   }
 
   /**
-   * Load lookup table from JSON file
-   * @param {Array} lookupData - Array of {cp_deficit, stat_penalty} objects
+   * Load lookup table from JSON.
+   * @param {Array<{cp_deficit:number, stat_penalty:number}>} lookupData
    */
   loadLookupTable(lookupData) {
-    if (!lookupData || !Array.isArray(lookupData)) {
-      console.warn('Invalid lookup table data, using power law fallback');
+    if (!lookupData || !Array.isArray(lookupData) || lookupData.length === 0) {
+      console.warn('Invalid lookup table data, calculator will use power-law fallback');
       return;
     }
-    
-    // Sort by cp_deficit for binary search
-    this.lookupTable = lookupData.sort((a, b) => a.cp_deficit - b.cp_deficit);
+
+    // Copy + sort so we don't mutate the caller's array.
+    this.lookupTable = lookupData.slice().sort((a, b) => a.cp_deficit - b.cp_deficit);
     this.lookupTableLoaded = true;
   }
 
   /**
-   * Binary search in lookup table
-   * @param {number} deficit - CP deficit to look up
-   * @returns {number|null} Stat penalty or null if not found
+   * Linear interpolation across the sorted lookup table.
+   *
+   * Bisect to find the upper-bound index, then lerp between the bracketing pair.
+   * Below the table's first nonzero entry, returns the first entry's penalty —
+   * honors the game's "any nonzero deficit triggers the 5pp jump" mechanic.
+   * Above the last entry, clamps to the last entry.
+   *
+   * @param {number} deficit
+   * @returns {number|null} interpolated penalty, or null if no table loaded
    */
-  lookupPenalty(deficit) {
-    if (!this.lookupTable || this.lookupTable.length === 0) {
-      return null;
+  _interpolate(deficit) {
+    const table = this.lookupTable;
+    if (!table || table.length === 0) return null;
+
+    if (deficit <= table[0].cp_deficit) return table[0].stat_penalty;
+    const last = table[table.length - 1];
+    if (deficit >= last.cp_deficit) return last.stat_penalty;
+
+    // Bisect for the smallest index whose cp_deficit >= deficit.
+    let lo = 0;
+    let hi = table.length - 1;
+    while (lo < hi) {
+      const mid = (lo + hi) >> 1;
+      if (table[mid].cp_deficit < deficit) lo = mid + 1;
+      else hi = mid;
     }
-
-    // Exact match
-    const exact = this.lookupTable.find(d => Math.abs(d.cp_deficit - deficit) < 1e-6);
-    if (exact) {
-      return exact.stat_penalty;
-    }
-
-    // Binary search for closest match
-    let left = 0;
-    let right = this.lookupTable.length - 1;
-    let closest = null;
-    let minDiff = Infinity;
-
-    while (left <= right) {
-      const mid = Math.floor((left + right) / 2);
-      const midDeficit = this.lookupTable[mid].cp_deficit;
-      const diff = Math.abs(midDeficit - deficit);
-
-      if (diff < minDiff) {
-        minDiff = diff;
-        closest = this.lookupTable[mid];
-      }
-
-      if (midDeficit < deficit) {
-        left = mid + 1;
-      } else {
-        right = mid - 1;
-      }
-    }
-
-    // If very close, return the value; otherwise interpolate
-    if (closest && minDiff < 0.001) {
-      return closest.stat_penalty;
-    }
-
-    // Linear interpolation between closest points
-    if (closest) {
-      const idx = this.lookupTable.indexOf(closest);
-      if (idx > 0 && idx < this.lookupTable.length - 1) {
-        const prev = this.lookupTable[idx - 1];
-        const next = this.lookupTable[idx + 1];
-        
-        if (deficit < closest.cp_deficit && prev) {
-          // Interpolate between prev and closest
-          const t = (deficit - prev.cp_deficit) / (closest.cp_deficit - prev.cp_deficit);
-          return prev.stat_penalty + t * (closest.stat_penalty - prev.stat_penalty);
-        } else if (next) {
-          // Interpolate between closest and next
-          const t = (deficit - closest.cp_deficit) / (next.cp_deficit - closest.cp_deficit);
-          return closest.stat_penalty + t * (next.stat_penalty - closest.stat_penalty);
-        }
-      }
-      return closest.stat_penalty;
-    }
-
-    return null;
+    const upper = table[lo];
+    const lower = table[lo - 1];
+    const span = upper.cp_deficit - lower.cp_deficit;
+    if (span === 0) return upper.stat_penalty;
+    const t = (deficit - lower.cp_deficit) / span;
+    return lower.stat_penalty + t * (upper.stat_penalty - lower.stat_penalty);
   }
 
   /**
-   * Validate CP input value
-   * @param {number} cp - CP value to validate
-   * @returns {boolean} True if valid
+   * Power-law evaluation: a · d^b.
+   */
+  _powerLaw(deficit) {
+    const { a, b } = this.powerLawParams;
+    return a * Math.pow(deficit, b);
+  }
+
+  /**
+   * Validate CP input value.
    */
   validateCP(cp) {
     return !isNaN(cp) && isFinite(cp) && cp > 0;
   }
 
   /**
-   * Calculate CP deficit percentage
-   * @param {number} stageCp - Recommended CP for the stage
-   * @param {number} teamCp - Actual team CP
-   * @returns {number} CP deficit as decimal (0.0 to 1.0)
-   * @throws {Error} If inputs are invalid
+   * Calculate CP deficit as a fraction in [0, 1].
+   * @throws {Error} on invalid inputs.
    */
   calculateCpDeficit(stageCp, teamCp) {
-    if (!this.validateCP(stageCp)) {
-      throw new Error('Stage CP must be a positive number');
-    }
-    if (!this.validateCP(teamCp)) {
-      throw new Error('Team CP must be a positive number');
-    }
-
-    const deficit = Math.max(0, stageCp - teamCp);
-    return deficit / stageCp;
+    if (!this.validateCP(stageCp)) throw new Error('Stage CP must be a positive number');
+    if (!this.validateCP(teamCp)) throw new Error('Team CP must be a positive number');
+    return Math.max(0, stageCp - teamCp) / stageCp;
   }
 
   /**
-   * Calculate stat penalty using piecewise function
-   * Uses lookup table for low/high ranges, power law for main range
-   * Formula derived from included dataset (501 data points)
-   * @param {number} cpDeficit - CP deficit as decimal (0.0 to 1.0)
-   * @returns {number} Stat penalty as decimal
+   * Calculate stat penalty using the active algorithm.
+   *
+   * Lookup mode: interpolated lookup, falls back to power law only when the table
+   *   hasn't loaded yet (so the calculator works on first paint and on file://).
+   * Power-law mode: always a · d^b, regardless of lookup state.
    */
   calculateStatPenalty(cpDeficit) {
-    const nonNegativeDeficit = Math.max(0, Math.min(1, cpDeficit));
-    
-    // Handle zero deficit
-    if (nonNegativeDeficit === 0) {
-      return 0;
+    const deficit = Math.max(0, Math.min(1, cpDeficit));
+    if (deficit === 0) return 0;
+
+    if (this.algorithm === ALGORITHMS.POWER_LAW) {
+      return this._powerLaw(deficit);
     }
 
-    const { lowRangeThreshold, highRangeThreshold, mainRange } = this.piecewiseParams;
-
-    // Use lookup table for low range (< 1%) and high range (> 48%) for accuracy
-    if (this.lookupTableLoaded && 
-        (nonNegativeDeficit < lowRangeThreshold || nonNegativeDeficit > highRangeThreshold)) {
-      const lookupPenalty = this.lookupPenalty(nonNegativeDeficit);
-      if (lookupPenalty !== null) {
-        return lookupPenalty;
-      }
+    // Lookup mode (default).
+    if (this.lookupTableLoaded) {
+      const interp = this._interpolate(deficit);
+      if (interp !== null) return interp;
     }
-
-    // Use power law for main range (1% - 48%)
-    // Fallback to power law if lookup table not loaded
-    const { a, b } = mainRange;
-    return a * Math.pow(nonNegativeDeficit, b);
+    return this._powerLaw(deficit);
   }
 
   /**
-   * Get color class based on CP deficit
-   * @param {number} cpDeficit - CP deficit as decimal
-   * @returns {string} Color class (corrupted-theme compatible)
+   * Get color class for the current deficit. Corrupted-theme compatible.
    */
   getDeficitColorClass(cpDeficit) {
-    // Use corrupted-theme compatible classes
-    if (cpDeficit >= 0.35) return 'danger';      // High deficit - red
-    if (cpDeficit >= 0.30) return 'warning';      // Moderate deficit - orange
-    if (cpDeficit >= 0.25) return 'caution';      // Minor deficit - yellow
-    return 'success';                              // Low deficit - green
+    if (cpDeficit >= 0.35) return 'danger';
+    if (cpDeficit >= 0.30) return 'warning';
+    if (cpDeficit >= 0.25) return 'caution';
+    return 'success';
   }
 
-  /**
-   * Format percentage for display
-   * @param {number} value - Decimal value (0.0 to 1.0)
-   * @returns {string} Formatted percentage string
-   */
   formatPercentage(value) {
     return (value * 100).toFixed(2) + '%';
   }
 
-  /**
-   * Calculate and return all results
-   * @param {number} stageCp - Recommended CP for the stage
-   * @param {number} teamCp - Actual team CP
-   * @returns {Object} Calculation results
-   */
   calculate(stageCp, teamCp) {
     const cpDeficit = this.calculateCpDeficit(stageCp, teamCp);
     const statPenalty = this.calculateStatPenalty(cpDeficit);
     const colorClass = this.getDeficitColorClass(cpDeficit);
-
     return {
       cpDeficit,
       statPenalty,
@@ -208,8 +153,8 @@ class CPDeficitCalculator {
   }
 }
 
-// Export for use in tests or modules
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = CPDeficitCalculator;
+  module.exports.ALGORITHMS = ALGORITHMS;
+  module.exports.DEFAULT_ALGORITHM = DEFAULT_ALGORITHM;
 }
-
